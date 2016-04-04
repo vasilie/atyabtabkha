@@ -1,0 +1,77 @@
+.footer {
+  border-top:3px solid #F03D65;
+  background: #F7F5E6;
+  overflow: hidden;
+}
+.footer__top {
+  overflow: hidden;
+  border-bottom: 1px solid gray;
+}
+.footer__search-container {
+  float: right;
+}
+.footer__search-heading {
+  padding: 48px 0 29px;
+  width: 100%;
+}
+.footer__search-input-container {
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+.footer__search-input {
+  line-height: 36px;
+  /* border: none; */
+  width: 242px;
+  float: right;
+}
+.footer__search-button {
+  @extend .search__button;
+  background: #F03D65;
+  color: white;
+  padding: 0 13px;
+  width: auto;
+}
+.footer__row {
+  width: 100%;
+  float: left;
+  padding-top: 46px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid;
+}
+.footer__column {
+  float: right;
+  width:25%;
+}
+.footer__item {
+  margin-bottom:12px;
+}
+.footer__bottom {
+  float: right;
+  width: 100%;
+}
+.copyright {
+  float: right;
+}
+.copyright__text {
+  padding: 16px 0 19px;
+}
+.webedia-logo {
+  margin-bottom: 36px;
+}
+.bottom__links {
+  float: left;
+  padding: 14px 52px;
+}
+.bottom__link {
+  display: inline;
+}
+.footer-social {
+  margin-top: 95px;
+  float: left;
+  margin-left: 54px;
+}
+.footer-social__item {
+  height: 24px;
+  display: inline;
+  margin-right: 10px;
+}

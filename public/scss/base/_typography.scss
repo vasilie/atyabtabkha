@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+$text__family--Roboto:  'Roboto', sans-serif;
+$text__family--droidKufi: 'Droid Arabic Kufi', sans-serif;
+$base__font-size: 15px !default;
+$base__line: 20 !default;
+
+html {
+  font-family: $text__family--droidKufi;
+	font-size: $base__font-size;
+  font-weight:300;
+  color: #333;
+}

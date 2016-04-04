@@ -1,0 +1,15 @@
+body, html {
+  direction: rtl;
+  // background: #0CD4C6;
+}
+.page-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin:0 auto;
+  background: white;
+  height: 100%;
+}
+.page-wrapper--transparent {
+  @extend .page-wrapper;
+  background: transparent;
+}

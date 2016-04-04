@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+a:hover, a:active, a:focus {
+  outline: none; }
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+html {
+  font-family: "Droid Arabic Kufi", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #333; }
+
+body, html {
+  direction: rtl; }
+
+.page-wrapper, .page-wrapper--transparent {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  height: 100%; }
+
+.page-wrapper--transparent {
+  background: transparent; }
+
+.header {
+  width: 100%; }
+
+.header__top {
+  width: 100%;
+  line-height: 55px;
+  height: 63px; }
+
+.header__top__item {
+  float: left;
+  margin-left: 25px; }
+
+.header__middle {
+  overflow: hidden;
+  margin-bottom: 39px; }
+
+.header__logo-container {
+  float: right;
+  margin-right: 17px; }
+
+.search {
+  float: right;
+  padding: 20px 55px; }
+
+.search__input {
+  line-height: 34px;
+  width: 425px;
+  float: right; }
+
+.search__button, .footer__search-button {
+  height: 40px;
+  line-height: 40px;
+  width: 39px;
+  float: right;
+  background-image: url(../../assets/img/searchico.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F03D65; }
+
+.advanced-search--text {
+  float: right;
+  line-height: 40px;
+  padding: 0 10px; }
+
+.advanced-search--button {
+  float: left;
+  height: 40px;
+  width: 40px;
+  background: url(../../assets/img/advanced.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.nav {
+  width: 100%;
+  background: #F03D65;
+  color: white;
+  padding: 0 40px; }
+
+.nav__item {
+  display: inline;
+  line-height: 42px;
+  margin-left: 40px; }
+
+.footer {
+  border-top: 3px solid #F03D65;
+  background: #F7F5E6;
+  overflow: hidden; }
+
+.footer__top {
+  overflow: hidden;
+  border-bottom: 1px solid gray; }
+
+.footer__search-container {
+  float: right; }
+
+.footer__search-heading {
+  padding: 48px 0 29px;
+  width: 100%; }
+
+.footer__search-input-container {
+  overflow: hidden;
+  padding-bottom: 25px; }
+
+.footer__search-input {
+  line-height: 36px;
+  /* border: none; */
+  width: 242px;
+  float: right; }
+
+.footer__search-button {
+  background: #F03D65;
+  color: white;
+  padding: 0 13px;
+  width: auto; }
+
+.footer__row {
+  width: 100%;
+  float: left;
+  padding-top: 46px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid; }
+
+.footer__column {
+  float: right;
+  width: 25%; }
+
+.footer__item {
+  margin-bottom: 12px; }
+
+.footer__bottom {
+  float: right;
+  width: 100%; }
+
+.copyright {
+  float: right; }
+
+.copyright__text {
+  padding: 16px 0 19px; }
+
+.webedia-logo {
+  margin-bottom: 36px; }
+
+.bottom__links {
+  float: left;
+  padding: 14px 52px; }
+
+.bottom__link {
+  display: inline; }
+
+.footer-social {
+  margin-top: 95px;
+  float: left;
+  margin-left: 54px; }
+
+.footer-social__item {
+  height: 24px;
+  display: inline;
+  margin-right: 10px; }
