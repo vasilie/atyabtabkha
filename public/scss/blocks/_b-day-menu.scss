@@ -1,0 +1,20 @@
+.day-menu {
+  width:100%;
+  border:1px solid red;
+  padding:10px;
+  overflow: hidden;
+}
+.day-menu__logo {
+  height: 40px;
+  width: 140px;
+  background: blue;
+}
+.day-menu__heading {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.day-menu__item {
+  @extend %box--small;
+  background: orange;
+  margin:10px;
+}

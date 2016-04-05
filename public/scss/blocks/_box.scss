@@ -1,0 +1,29 @@
+%box {
+  display: block;
+  float: right;
+}
+%box--xsmall {
+  @extend %box;
+  width: 151px;
+  height: 151px;
+}
+%box--small {
+  @extend %box;
+  width: 181px;
+  height: 181px;
+}
+%box--middle {
+  @extend %box;
+  width:300px;
+  height:300px;
+}
+%box--large {
+  @extend %box;
+  width: 556px;
+  height: 385px;
+}
+%box--xlarge {
+  @extend %box;
+  width: 100%;
+  height: 385px;
+}

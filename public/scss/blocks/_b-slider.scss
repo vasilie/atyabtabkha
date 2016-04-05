@@ -1,0 +1,14 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 34px 0;
+}
+.slider__box {
+  background: red;
+  margin:0 21px 23px 0px;
+  @extend %box--small;
+  &.first {
+    @extend %box--large;
+    margin: 0;
+  }
+}
