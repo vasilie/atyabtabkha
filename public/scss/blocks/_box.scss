@@ -4,13 +4,25 @@
 }
 %box--xsmall {
   @extend %box;
-  width: 151px;
-  height: 151px;
+  width: 181px;
+  height: 181px;
+  position: relative;
+  h3 {
+    position: absolute;
+    color: white;
+    line-height: 20px;
+    width: 100%;
+    padding: 4%;
+    bottom: 2%;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+  }
 }
 %box--small {
   @extend %box;
-  width: 181px;
-  height: 181px;
+  width: 151px;
+  height: 151px;
 }
 %box--middle {
   @extend %box;
@@ -20,10 +32,16 @@
 %box--large {
   @extend %box;
   width: 556px;
-  height: 385px;
+  height: auto;
+  overflow: hidden;
+  h3 {
+    font-size:30px;
+  }
 }
 %box--xlarge {
   @extend %box;
   width: 100%;
-  height: 385px;
+  h3 {
+    font-size:30px;
+  }
 }

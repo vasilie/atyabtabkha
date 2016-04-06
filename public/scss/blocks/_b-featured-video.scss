@@ -1,4 +1,19 @@
 .featured-video {
   @extend %box--xlarge;
-  border: 1px solid cyan;
+  position: relative;
+}
+.featured-video__item {
+  width: 100%;
+}
+.featured-video__heading {
+  padding: 33px 0 13px;
+}
+.featured-video__content {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+.featured-video__button {
+  @extend .button;
+  margin-bottom: 20px;
 }

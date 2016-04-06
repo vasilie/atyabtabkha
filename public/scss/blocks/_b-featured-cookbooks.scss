@@ -3,4 +3,18 @@
   height: 400px;
   border:1px solid green;
   float: right;
+  text-align: center;
+  padding: 40px 0px;
+}
+.featured-cookbooks__item {
+  display: inline-block;
+  margin:23px;
+}
+.featured-cookbooks__name {
+  color:#F03D65;
+  margin: 20px 0 18px;
+  font-size: 16px;
+}
+.featured-cookbooks__info {
+  font-size: 18px;
 }

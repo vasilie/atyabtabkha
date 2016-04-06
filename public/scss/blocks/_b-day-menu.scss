@@ -1,20 +1,47 @@
 .day-menu {
   width:100%;
   border:1px solid red;
-  padding:10px;
+  padding:20px;
   overflow: hidden;
+}
+.day-menu__heading-container {
+  width: 100%;
+  float: right;
+  border-bottom:2px solid red;
 }
 .day-menu__logo {
   height: 40px;
-  width: 140px;
-  background: blue;
+  width: 106px;
+  margin-top: -8px;
+  float: left;
+  height: auto;
 }
 .day-menu__heading {
-  width: 80%;
-  margin-bottom: 20px;
+  // width: 80%;
+  float: right;
+  padding-top:5px;
+  margin-bottom: 14px;
 }
 .day-menu__item {
-  @extend %box--small;
-  background: orange;
-  margin:10px;
+  @extend %box--xsmall;
+    margin: 19px 12px;
+  &:nth-child(2){
+    margin-right: 0
+  }
+  &:nth-child(4){
+    margin-left: 0
+  }
+}
+.day-menu__item-image {
+  width: 100%;
+}
+.day-menu__item-ico {
+  position: absolute;
+  width: 35%;
+  top:50%;
+  left:50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
 }

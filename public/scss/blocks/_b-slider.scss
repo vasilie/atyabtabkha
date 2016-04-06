@@ -4,11 +4,20 @@
   padding: 34px 0;
 }
 .slider__box {
-  background: red;
   margin:0 21px 23px 0px;
-  @extend %box--small;
+  overflow: hidden;
+  position: relative;
+  @extend %box--xsmall;
   &.first {
     @extend %box--large;
     margin: 0;
   }
+}
+.slider__box-image {
+  width: 100%;
+}
+.slider__box-play-icon {
+  position: absolute;
+  top: 5%;
+  left: 4%;
 }

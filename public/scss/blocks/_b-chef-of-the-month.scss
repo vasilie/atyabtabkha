@@ -1,4 +1,29 @@
 .chef-of-the-month {
   @extend %box--middle;
   border:1px solid purple;
+  text-align: center;
+}
+.chef-of-the-month__heading {
+  padding: 18px 0;
+}
+.chef-of-the-month__image-wrap {
+  border-radius: 50%;
+  margin-top: 7px;
+}
+.chef-of-the-month__name {
+  margin-top: 12px;
+}
+.chef-of-the-month__bottom-text {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 37px;
+}
+.chef-of-the-month__bottom-left {
+  float: left;
+}
+.chef-of-the-month__bottom-right {
+  float: right;
+}
+.🍺 {
+  background: purple;
 }
