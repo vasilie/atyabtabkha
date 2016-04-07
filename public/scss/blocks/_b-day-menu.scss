@@ -23,6 +23,8 @@
   margin-bottom: 14px;
 }
 .day-menu__item {
+  overflow: hidden;
+  @extend .bg-mask;
   @extend %box--xsmall;
     margin: 19px 12px;
   &:nth-child(2){

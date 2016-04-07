@@ -1,0 +1,7 @@
+.bg-mask::after {
+  content: url(../../assets/img/overlay-large.png);
+  width: 100%;
+  position: absolute;
+  bottom:-3px;
+  z-index: 2;
+}

@@ -73,23 +73,48 @@ h2 {
 
 h3 {
   color: white;
-  text-shadow: 2px 1px #503C2F; }
+  text-shadow: 2px 1px #503C2F;
+  z-index: 3;
+  position: relative; }
 
-.slider__box, .day-menu__item, .featured-content, .chef-of-the-month, .slider__box.first, .featured-video {
+.bg-mask::after, .slider__box::after, .day-menu__item::after, .featured-video::after, .trending-topic__item::after, .step-by-step-recipe::after {
+  content: url(../../assets/img/overlay-large.png);
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  z-index: 2; }
+
+.slider__box, .day-menu__item, .trending-fb-recipes .item, .trending-topic__item, .featured-content, .chef-of-the-month, .slider__box.first, .featured-video, .step-by-step-recipe {
   display: block;
   float: right; }
 
-.slider__box, .day-menu__item {
+.slider__box, .day-menu__item, .trending-fb-recipes .item {
   width: 181px;
   height: 181px;
   position: relative; }
-  .slider__box h3, .day-menu__item h3 {
+  .slider__box h3, .day-menu__item h3, .trending-fb-recipes .item h3 {
     position: absolute;
     color: white;
     line-height: 20px;
     width: 100%;
     padding: 4%;
-    bottom: 2%;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    z-index: 3; }
+
+.trending-topic__item {
+  width: 191px;
+  height: 191px;
+  position: relative; }
+  .trending-topic__item h3 {
+    position: absolute;
+    color: white;
+    line-height: 20px;
+    width: 100%;
+    padding: 4%;
+    bottom: 0;
     font-size: 20px;
     font-weight: 300;
     line-height: 25px; }
@@ -105,10 +130,21 @@ h3 {
   .slider__box.first h3 {
     font-size: 30px; }
 
-.featured-video {
+.featured-video, .step-by-step-recipe {
   width: 100%; }
-  .featured-video h3 {
+  .featured-video h3, .step-by-step-recipe h3 {
     font-size: 30px; }
+  .featured-video .ch-item, .step-by-step-recipe .ch-item {
+    width: 100%;
+    display: block; }
+  .featured-video .ch-heading, .step-by-step-recipe .ch-heading {
+    padding: 33px 0 13px; }
+  .featured-video .ch-content, .step-by-step-recipe .ch-content {
+    position: absolute;
+    bottom: 0;
+    padding: 20px; }
+  .featured-video .ch-button, .step-by-step-recipe .ch-button {
+    margin-bottom: 20px; }
 
 body, html {
   direction: rtl;
@@ -136,7 +172,8 @@ body, html {
   width: 65.96%; }
 
 .division--4 {
-  width: 34%; }
+  width: 34%;
+  padding-right: 20px; }
 
 .header {
   width: 100%; }
@@ -291,12 +328,18 @@ body, html {
     margin: 0; }
 
 .slider__box-image {
-  width: 100%; }
+  width: 100%;
+  display: block; }
 
 .slider__box-play-icon {
   position: absolute;
   top: 5%;
   left: 4%; }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: 2; }
 
 .day-menu {
   width: 100%;
@@ -322,6 +365,7 @@ body, html {
   margin-bottom: 14px; }
 
 .day-menu__item {
+  overflow: hidden;
   margin: 19px 12px; }
   .day-menu__item:nth-child(2) {
     margin-right: 0; }
@@ -343,20 +387,6 @@ body, html {
 
 .featured-video {
   position: relative; }
-
-.featured-video__item {
-  width: 100%; }
-
-.featured-video__heading {
-  padding: 33px 0 13px; }
-
-.featured-video__content {
-  position: absolute;
-  bottom: 0;
-  padding: 20px; }
-
-.featured-video__button {
-  margin-bottom: 20px; }
 
 .featured-content {
   border: 1px solid yellow; }
@@ -407,7 +437,7 @@ body, html {
   height: 300px;
   border: 1px solid brown; }
 
-.button, .featured-video__button, .featured-content__button {
+.button, .featured-video .ch-button, .step-by-step-recipe .ch-button, .featured-content__button {
   color: white;
   font-size: 16px;
   line-height: 40px;
@@ -416,6 +446,59 @@ body, html {
   background: #F03D65;
   text-align: center;
   float: right; }
+
+.banner__container {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0; }
+
+.trending-topic {
+  width: 100%;
+  overflow: hidden; }
+
+.trending-topic__item {
+  overflow: hidden;
+  margin: 10px; }
+  .trending-topic__item img {
+    width: 100%;
+    display: block; }
+
+.step-by-step-recipe {
+  position: relative; }
+
+.trending-fb-recipes {
+  float: right; }
+  .trending-fb-recipes .heading-container {
+    width: 100%;
+    float: right;
+    border-bottom: 2px solid red; }
+  .trending-fb-recipes .heading {
+    float: right;
+    padding-top: 5px;
+    margin-bottom: 14px; }
+  .trending-fb-recipes .logo {
+    height: 40px;
+    width: 106px;
+    margin-top: -8px;
+    float: left;
+    height: auto; }
+  .trending-fb-recipes .item {
+    margin: 19px 12px; }
+    .trending-fb-recipes .item:nth-child(2), .trending-fb-recipes .item:nth-child(5) {
+      margin-right: 0; }
+    .trending-fb-recipes .item:nth-child(4), .trending-fb-recipes .item:nth-child(7) {
+      margin-left: 0; }
+  .trending-fb-recipes .item-image {
+    width: 100%; }
+  .trending-fb-recipes .item__ico {
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%); }
 
 .featured-cookbooks {
   width: 100%;
@@ -436,3 +519,34 @@ body, html {
 
 .featured-cookbooks__info {
   font-size: 18px; }
+
+.sidebar-topic {
+  width: 100%;
+  padding-top: 10px; }
+
+.sidebar-topic__heading {
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  padding: 13px 0; }
+
+.sidebar-topic__content {
+  width: 100%;
+  text-align: center; }
+
+.sidebar-topic__text {
+  font-size: 14px;
+  padding-top: 11px;
+  line-height: 24px; }
+
+.sidebar-topic__image {
+  width: 100%; }
+
+.sidebar-topic__button {
+  background: red;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  margin-top: 19px;
+  line-height: 40px;
+  height: 40px; }

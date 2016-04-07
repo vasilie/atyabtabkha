@@ -1,0 +1,31 @@
+.sidebar-topic {
+  width: 100%;
+  padding-top:10px;
+}
+.sidebar-topic__heading {
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  padding:13px 0;
+}
+.sidebar-topic__content {
+  width: 100%;
+  text-align: center;
+}
+.sidebar-topic__text {
+  font-size: 14px;
+  padding-top: 11px;
+  line-height: 24px;
+}
+.sidebar-topic__image {
+  width: 100%;
+}
+.sidebar-topic__button {
+  background: red;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  margin-top: 19px;
+  line-height: 40px;
+  height: 40px;
+}

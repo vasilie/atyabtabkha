@@ -1,5 +1,6 @@
-.featured-video {
+.step-by-step-recipe {
   @extend %box--xlarge;
-  @extend .bg-mask;
   position: relative;
+  @extend .bg-mask;
+
 }

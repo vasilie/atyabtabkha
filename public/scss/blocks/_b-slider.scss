@@ -7,6 +7,7 @@
   margin:0 21px 23px 0px;
   overflow: hidden;
   position: relative;
+  @extend .bg-mask;
   @extend %box--xsmall;
   &.first {
     @extend %box--large;
@@ -15,9 +16,15 @@
 }
 .slider__box-image {
   width: 100%;
+  display: block;
 }
 .slider__box-play-icon {
   position: absolute;
   top: 5%;
   left: 4%;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
 }

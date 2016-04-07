@@ -1,0 +1,43 @@
+.trending-fb-recipes {
+  float: right;
+  .heading-container {
+    width: 100%;
+    float: right;
+    border-bottom:2px solid red;
+  }
+  .heading {
+    float: right;
+    padding-top:5px;
+    margin-bottom: 14px;
+  }
+  .logo {
+    height: 40px;
+    width: 106px;
+    margin-top: -8px;
+    float: left;
+    height: auto;
+  }
+  .item {
+    @extend %box--xsmall;
+      margin: 19px 12px;
+    &:nth-child(2), &:nth-child(5){
+      margin-right: 0
+    }
+    &:nth-child(4), &:nth-child(7){
+      margin-left: 0
+    }
+  }
+  .item-image {
+    width: 100%;
+  }
+  .item__ico {
+    position: absolute;
+    width: 35%;
+    top:50%;
+    left:50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+  }
+}

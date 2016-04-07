@@ -13,16 +13,29 @@
     line-height: 20px;
     width: 100%;
     padding: 4%;
-    bottom: 2%;
+    bottom: 0;
     font-size: 20px;
     font-weight: 300;
     line-height: 25px;
+    z-index: 3;
   }
 }
 %box--small {
   @extend %box;
-  width: 151px;
-  height: 151px;
+  width: 191px;
+  height: 191px;
+  position: relative;
+  h3 {
+    position: absolute;
+    color: white;
+    line-height: 20px;
+    width: 100%;
+    padding: 4%;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+  }
 }
 %box--middle {
   @extend %box;
@@ -43,5 +56,21 @@
   width: 100%;
   h3 {
     font-size:30px;
+  }
+  .ch-item {
+    width: 100%;
+    display: block;
+  }
+  .ch-heading {
+    padding: 33px 0 13px;
+  }
+  .ch-content {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+  }
+  .ch-button {
+    @extend .button;
+    margin-bottom: 20px;
   }
 }
