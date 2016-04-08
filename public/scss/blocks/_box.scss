@@ -1,11 +1,15 @@
 %box {
   display: block;
   float: right;
+  overflow: hidden;
+  img {
+    vertical-align: bottom;
+  }
 }
 %box--xsmall {
   @extend %box;
-  width: 181px;
-  height: 181px;
+  width: cp(181px, 592px);
+  // height: 181px;
   position: relative;
   h3 {
     position: absolute;
@@ -22,8 +26,7 @@
 }
 %box--small {
   @extend %box;
-  width: 191px;
-  height: 191px;
+  width: cp(191px, 633px);
   position: relative;
   h3 {
     position: absolute;
@@ -39,12 +42,12 @@
 }
 %box--middle {
   @extend %box;
-  width:300px;
-  height:300px;
+  width:49%;
+  margin:0 1%;
 }
 %box--large {
   @extend %box;
-  width: 556px;
+  width: cp(556px, 960px);
   height: auto;
   overflow: hidden;
   h3 {

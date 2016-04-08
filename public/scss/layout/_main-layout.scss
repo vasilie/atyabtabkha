@@ -1,6 +1,6 @@
 body, html {
   direction: rtl;
-  background: #0CD4C6;
+  // background: #0CD4C6;
 }
 .page-wrapper {
   width: 100%;
@@ -10,6 +10,9 @@ body, html {
   height: 100%;
   padding:0 18px;
   overflow: hidden;
+  @include breakpoint(mobile) {
+    padding: 0;
+  }
 }
 .page-wrapper--transparent {
   @extend .page-wrapper;
@@ -25,9 +28,16 @@ body, html {
 .division--8 {
   @extend .division;
   width: 65.96%;
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
 }
 .division--4 {
   @extend .division;
   width: 34%;
   padding-right: 20px;
+  @include breakpoint(mobile) {
+    width: 100%;
+    padding: 0;
+  }
 }

@@ -1,17 +1,31 @@
 .slider {
   width: 100%;
   overflow: hidden;
-  padding: 34px 0;
+  padding: 34px 0px 22px;
+  position: relative;
 }
 .slider__box {
-  margin:0 21px 23px 0px;
-  overflow: hidden;
-  position: relative;
   @extend .bg-mask;
   @extend %box--xsmall;
+  width: cp(181px, 960px);
+  margin:0;
+  margin-right: cp(21px, 960px);
+  margin-bottom: cp(23px, 960px);
+  overflow: hidden;
+  position: relative;
+
   &.first {
     @extend %box--large;
     margin: 0;
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+    display: none;
+    top:0;
+    &.first {
+      width: 100%;
+      display: block;
+    }
   }
 }
 .slider__box-image {

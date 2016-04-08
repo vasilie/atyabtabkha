@@ -10,6 +10,10 @@
 }
 .footer__search-container {
   float: right;
+  @include breakpoint(mobile) {
+    width: 100%;
+    text-align: center;
+  }
 }
 .footer__search-heading {
   padding: 48px 0 29px;
@@ -18,12 +22,19 @@
 .footer__search-input-container {
   overflow: hidden;
   padding-bottom: 25px;
+  @include breakpoint(mobile) {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .footer__search-input {
   line-height: 36px;
   /* border: none; */
   width: 242px;
   float: right;
+  @include breakpoint(mobile) {
+    width: 80%;
+  }
 }
 .footer__search-button {
   @extend .search__button;
@@ -31,6 +42,10 @@
   color: white;
   padding: 0 13px;
   width: auto;
+  @include breakpoint(mobile) {
+    width:20%;
+    padding: 0;
+  }
 }
 .footer__row {
   width: 100%;
@@ -42,6 +57,14 @@
 .footer__column {
   float: right;
   width:25%;
+  @include breakpoint(mobile) {
+    display: none;
+    width: 100%;
+  }
+}
+.footer__column--first {
+  display: block;
+  text-align: center;
 }
 .footer__item {
   margin-bottom:12px;
@@ -52,9 +75,16 @@
 }
 .copyright {
   float: right;
+  text-align: center;
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
 }
 .copyright__text {
   padding: 16px 0 19px;
+  @include breakpoint(mobile) {
+    text-align: center;
+  }
 }
 .webedia-logo {
   margin-bottom: 36px;
@@ -62,6 +92,9 @@
 .bottom__links {
   float: left;
   padding: 14px 52px;
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 .bottom__link {
   display: inline;
@@ -70,6 +103,11 @@
   margin-top: 95px;
   float: left;
   margin-left: 54px;
+  @include breakpoint(mobile) {
+    margin:0 auto;
+    float: none;
+    text-align: center;
+  }
 }
 .footer-social__item {
   height: 24px;

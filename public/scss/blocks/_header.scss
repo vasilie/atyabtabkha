@@ -3,6 +3,9 @@
 }
 .header {
   width: 100%;
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 .header__top {
   width: 100%;
@@ -16,14 +19,20 @@
 .header__middle {
   overflow: hidden;
   margin-bottom: 39px;
+
 }
 .header__logo-container {
   float: right;
   margin-right: 17px;
+  width: cp(225px, 997px);
+}
+.header__logo {
+  width: 100%;
 }
 .search {
   float: right;
   padding: 20px 55px;
+  // width: cp(800px,997px);
 }
 .search__input {
   line-height: 34px;

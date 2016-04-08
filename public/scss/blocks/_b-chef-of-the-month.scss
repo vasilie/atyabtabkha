@@ -2,6 +2,13 @@
   @extend %box--middle;
   border:1px solid purple;
   text-align: center;
+
+  img {
+    display: inline;
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
 }
 .chef-of-the-month__heading {
   padding: 18px 0;
@@ -25,5 +32,5 @@
   float: right;
 }
 .🍺 {
-  background: purple;
+  // background: purple;
 }

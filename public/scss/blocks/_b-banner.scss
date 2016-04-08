@@ -2,4 +2,11 @@
   width:100%;
   text-align: center;
   padding:30px 0;
+  .banner {
+    width: 100%;
+    max-width: 735px;
+  }
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }

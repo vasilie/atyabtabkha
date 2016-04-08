@@ -26,7 +26,8 @@
   overflow: hidden;
   @extend .bg-mask;
   @extend %box--xsmall;
-    margin: 19px 12px;
+  margin: cp(19px, 592px) cp(12px, 592px);
+  margin-bottom: 0;
   &:nth-child(2){
     margin-right: 0
   }
@@ -42,6 +43,7 @@
   width: 35%;
   top:50%;
   left:50%;
+  z-index: 4;
   -webkit-transform: translateY(-50%) translateX(-50%);
   -ms-transform: translateY(-50%) translateX(-50%);
   -o-transform: translateY(-50%) translateX(-50%);

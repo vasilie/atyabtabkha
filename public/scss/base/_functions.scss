@@ -1,3 +1,6 @@
 @function calc-rem($target) {
     @return ($target / $base__font-size) * 1rem;
 }
+@function cp($target, $container) {
+  @return ($target / $container) * 100%;
+}
