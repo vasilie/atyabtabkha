@@ -4,13 +4,16 @@
 .header {
   width: 100%;
   @include breakpoint(mobile) {
-    display: none;
+    // display: none;
   }
 }
 .header__top {
   width: 100%;
   line-height: 55px;
   height: 63px;
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 .header__top__item {
   float: left;
@@ -19,24 +22,69 @@
 .header__middle {
   overflow: hidden;
   margin-bottom: 39px;
-
+  @include breakpoint(mobile) {
+    padding-top: 7px;
+    margin-bottom: 0;
+    background: #EFECD9;
+  }
+}
+.header-search--mobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-image: url('../../assets/img/search-ico-mobile.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  @include breakpoint(mobile) {
+    display: block;
+    float: left;
+  }
+}
+.header-profile--mobile {
+  @extend .header-search--mobile;
+  background-image: url("../../assets/img/profile-ico-mobile.png");
+}
+.header__menu-ico {
+  @extend .header-search--mobile;
+  background-image: url("../../assets/img/menu-ico.png");
+  float: right;
 }
 .header__logo-container {
   float: right;
   margin-right: 17px;
   width: cp(225px, 997px);
+  @include breakpoint(mobile) {
+    margin-right: 17px;
+    width: 22.5677%;
+    float: left;
+    margin-left: 65px;
+    padding: 6px 0;
+  }
 }
 .header__logo {
   width: 100%;
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+.header__logo--mobile {
+  display: none;
+  @include breakpoint(mobile) {
+    display: block;
+  }
 }
 .search {
   float: right;
-  padding: 20px 55px;
+  padding: cp(20px, 960px) cp(55px,960px);
+  width: 70%;
+  @include breakpoint(mobile) {
+    display: none;
+  }
   // width: cp(800px,997px);
 }
 .search__input {
   line-height: 34px;
-  width: 425px;
+  width: 60%;
   float:right
 }
 .search__button {
@@ -61,4 +109,40 @@
   background: url(../../assets/img/advanced.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+.shortcuts--mobile {
+  display: none;
+  @include breakpoint(mobile) {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+}
+.submit-recipe, .sub-section{
+  width: 50%;
+  float: right;
+  font-size: 15px;
+}
+.sub-section {
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+.submit-recipe__ico {
+  @extend .header-search--mobile;
+  width: 50px;
+  margin-right: 4px;
+  margin-top: 5px;
+  float: right;
+  background-image: url(../../assets/img/post-recipe-ico.png);
+}
+.leaderboard--mobile {
+  width: 100%;
+  display: none;
+  @include breakpoint(mobile) {
+    display: block;
+    float: left;
+  }
 }

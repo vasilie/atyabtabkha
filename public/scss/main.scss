@@ -1,10 +1,11 @@
 @import "base/reset";
-@import "base/typography";
 @import "base/breakpoints";
+@import "base/typography";
 @import "base/functions";
 @import "base/headings";
 @import 'utilities/helpers';
 @import "blocks/box";
+@import "blocks/b-buttons";
 @import "layout/main-layout";
 @import "blocks/header";
 @import "blocks/navigation";
@@ -15,7 +16,6 @@
 @import "blocks/b-featured-content";
 @import "blocks/b-chef-of-the-month";
 @import "blocks/b-mpu";
-@import "blocks/b-buttons";
 @import "blocks/b-banner";
 @import "blocks/b-trending-topic";
 @import "blocks/b-step-by-step-recipe";

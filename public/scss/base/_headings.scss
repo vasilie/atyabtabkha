@@ -1,10 +1,16 @@
 h2 {
-  font-size: 30px;
+  font-size: calc-rem(30px);
   color:#333;
+  @include breakpoint(mobile) {
+    font-size: 22px;
+  }
 }
 h3 {
   color: white;
   text-shadow: 2px 1px #503C2F;
   z-index: 3;
   position: relative;
+  @include breakpoint(mobile) {
+    font-size: 17px;
+  }
 }

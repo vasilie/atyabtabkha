@@ -1,24 +1,26 @@
 .featured-content {
   @extend %box--middle;
-  border:1px solid yellow;
+  border:1px solid #ccc;
   @include breakpoint(mobile) {
     width: 100%;
+    margin-bottom: 32px;
   }
 }
 .featured-content__image {
   width: 100%;
 }
 .featured-content__button {
-  @extend .button;
-  width: 100px;
+  @extend .button--slim;
+  width: 141px;
   margin: 0 auto;
   float: none !important;
-  margin-top: -40px;
+  margin-top: -21px;
   z-index: 10;
   position: relative;
 }
 .featured-content__text {
   text-align: center;
-  font-size: 24px;
-  padding:20px;
+  font-size: calc-rem(24px);
+  padding: 20px 20px 35px;
+  line-height: 26px;
 }

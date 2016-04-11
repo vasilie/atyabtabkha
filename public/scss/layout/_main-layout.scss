@@ -11,7 +11,13 @@ body, html {
   padding:0 18px;
   overflow: hidden;
   @include breakpoint(mobile) {
-    padding: 0;
+    padding: 0 10px;
+  }
+}
+.page-wrapper--no-padding-mobile {
+  @extend .page-wrapper;
+  @include breakpoint(mobile) {
+    padding:0;
   }
 }
 .page-wrapper--transparent {
@@ -35,7 +41,7 @@ body, html {
 .division--4 {
   @extend .division;
   width: 34%;
-  padding-right: 20px;
+  padding-right: cp(20px,960px);
   @include breakpoint(mobile) {
     width: 100%;
     padding: 0;

@@ -1,6 +1,6 @@
 .chef-of-the-month {
   @extend %box--middle;
-  border:1px solid purple;
+  border:1px solid #ccc;
   text-align: center;
 
   img {
@@ -8,6 +8,7 @@
   }
   @include breakpoint(mobile) {
     width: 100%;
+    margin:0;
   }
 }
 .chef-of-the-month__heading {
@@ -21,16 +22,18 @@
   margin-top: 12px;
 }
 .chef-of-the-month__bottom-text {
-  overflow: hidden;
+  background: #F9F8F4;
+  height: 39px;
+  margin-top: 24px;
+  line-height: 40px;
+  padding: 0 8px;
+  display: block;
+  float: right;
   width: 100%;
-  margin-top: 37px;
 }
 .chef-of-the-month__bottom-left {
   float: left;
 }
 .chef-of-the-month__bottom-right {
   float: right;
-}
-.🍺 {
-  // background: purple;
 }

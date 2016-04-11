@@ -1,3 +1,7 @@
 .mpu {
   width: 100%;
+  margin-bottom: 33px;
+  @include breakpoint(mobile) {
+    margin-bottom: 12px;
+  }
 }

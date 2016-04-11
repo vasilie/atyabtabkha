@@ -11,4 +11,13 @@ html {
 	font-size: $base__font-size;
   font-weight:300;
   color: #333;
+  @include breakpoint(xmedium) {
+    font-size: 12px;
+  }
+  @include breakpoint(medium) {
+    font-size: 10px;
+  }
+  @include breakpoint(mobile) {
+    font-size: 15px;
+  }
 }

@@ -3,6 +3,12 @@
   float: right;
   text-align: center;
   padding: 40px 0px 6px;
+  @include breakpoint(mobile) {
+    background: #F7F5E6;
+    margin-top: 35px;
+    padding: 33px 0 0;
+    overflow: hidden;
+  }
 }
 .featured-cookbooks__item {
   display: inline-block;
@@ -11,21 +17,32 @@
   img {
     width: 100%;
   }
+  @include breakpoint(mobile) {
+    margin: -8px 9px 22px;
+  }
 }
 .featured-cookbooks__list {
   padding-top: 13px;
   margin-top: 22px;
   padding-bottom: 19px;
   background: #F7F5E6;
+  @include breakpoint(mobile) {
+    width: 297%;
+    position: relative;
+    left: 65%;
+  }
 }
 .featured-cookbooks__heading {
   text-align: right;
+  @include breakpoint(mobile) {
+    text-align: center;
+  }
 }
 .featured-cookbooks__name {
   color:#F03D65;
   margin: 20px 0 18px;
-  font-size: 16px;
+  font-size: calc-rem(16px);
 }
 .featured-cookbooks__info {
-  font-size: 18px;
+  font-size: calc-rem(18px);
 }

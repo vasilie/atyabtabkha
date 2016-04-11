@@ -75,8 +75,8 @@
 }
 .copyright {
   float: right;
-  text-align: center;
   @include breakpoint(mobile) {
+    text-align: center;
     width: 100%;
   }
 }

@@ -1,8 +1,12 @@
 .step-by-step-recipe {
   @extend %box--xlarge;
   position: relative;
+  margin-bottom: 84px;
   @extend .bg-mask;
   img {
     display: inline;
+  }
+  @include breakpoint(mobile) {
+    margin-bottom: 34px;
   }
 }

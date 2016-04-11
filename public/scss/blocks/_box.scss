@@ -18,10 +18,13 @@
     width: 100%;
     padding: 4%;
     bottom: 0;
-    font-size: 20px;
+    font-size: calc-rem(20px);
     font-weight: 300;
     line-height: 25px;
     z-index: 3;
+    @include breakpoint(mobile) {
+      font-size: calc-rem(17px) !important;
+    }
   }
 }
 %box--small {
@@ -35,7 +38,7 @@
     width: 100%;
     padding: 4%;
     bottom: 0;
-    font-size: 20px;
+    font-size: calc-rem(20px);
     font-weight: 300;
     line-height: 25px;
   }
@@ -51,14 +54,20 @@
   height: auto;
   overflow: hidden;
   h3 {
-    font-size:30px;
+    font-size:calc-rem(30px);
+    @include breakpoint(mobile) {
+      font-size: calc-rem(17px) !important;
+    }
   }
 }
 %box--xlarge {
   @extend %box;
   width: 100%;
   h3 {
-    font-size:30px;
+    font-size:calc-rem(30px);
+    @include breakpoint(mobile) {
+      font-size: calc-rem(19px) !important;
+    }
   }
   .ch-item {
     width: 100%;
@@ -69,11 +78,14 @@
   }
   .ch-content {
     position: absolute;
-    bottom: 0;
+    bottom: 46px;
     padding: 20px;
+    @include breakpoint(mobile) {
+      bottom:18px;
+    }
   }
   .ch-button {
-    @extend .button;
+    @extend .button--slim;
     margin-bottom: 20px;
   }
 }

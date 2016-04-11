@@ -1,13 +1,23 @@
 .day-menu {
   width:100%;
-  border:1px solid red;
-  padding:20px;
+  border:1px solid #A56170;
+  padding:cp(20px,633px);
   overflow: hidden;
+  @include breakpoint(mobile) {
+    padding: 8px;
+    border:none;
+    h3 {
+      position: relative;
+      background: white;
+      color: #333;
+      text-shadow: none;
+    }
+  }
 }
 .day-menu__heading-container {
   width: 100%;
   float: right;
-  border-bottom:2px solid red;
+  border-bottom:2px solid #A56170;
 }
 .day-menu__logo {
   height: 40px;
@@ -15,6 +25,9 @@
   margin-top: -8px;
   float: left;
   height: auto;
+  @include breakpoint(mobile) {
+    width: 74px;
+  }
 }
 .day-menu__heading {
   // width: 80%;
@@ -34,6 +47,12 @@
   &:nth-child(4){
     margin-left: 0
   }
+  @include breakpoint(mobile) {
+    h3 {
+      font-size: 14px !important;
+      line-height: 21px;
+    }
+  }
 }
 .day-menu__item-image {
   width: 100%;
@@ -48,4 +67,7 @@
   -ms-transform: translateY(-50%) translateX(-50%);
   -o-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
+  @include breakpoint(mobile) {
+    top: 25%;
+  }
 }

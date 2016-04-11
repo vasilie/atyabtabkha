@@ -1,6 +1,7 @@
 .trending-topic  {
   width: 100%;
   overflow: hidden;
+  margin-bottom: 16px;
 }
 .trending-topic__item {
   @extend %box--small;
@@ -12,6 +13,26 @@
     display: block;
   }
   @include breakpoint(mobile) {
+    width: 100%;
+    height: 50vw;
+    margin-bottom: 15px;
+  }
+}
+.trending-topic__heading {
+  margin-bottom: 9px;
+  @include breakpoint(mobile) {
+    margin-top: 30px;
+  }
+}
+.trending-topic__image {
+  @include breakpoint(mobile) {
+    display: none !important;
+  }
+}
+.trending-topic__image--mobile {
+  display: none !important;
+  @include breakpoint(mobile) {
+    display: block !important;
     width: 100%;
   }
 }

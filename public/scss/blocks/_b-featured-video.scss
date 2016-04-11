@@ -3,4 +3,16 @@
   @extend .bg-mask;
   position: relative;
   margin-bottom: 39px;
+  @include breakpoint(mobile) {
+    margin-bottom: 31px;
+  }
+}
+.media-type__icon {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  z-index: 5;
+}
+.ch-item {
+  position: relative;
 }
