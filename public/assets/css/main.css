@@ -120,17 +120,18 @@ h3 {
     line-height: 20px;
     width: 100%;
     padding: 4%;
-    bottom: 0;
+    bottom: 12px;
     font-size: 1.33333rem;
     font-weight: 300;
     line-height: 25px;
     z-index: 3; }
     @media (max-width: 480px) {
       .slider__box h3, .day-menu__item h3, .trending-fb-recipes .item h3 {
-        font-size: 1.13333rem !important; } }
+        font-size: 1.13333rem !important;
+        bottom: 0px; } }
 
 .trending-topic__item {
-  width: 30.17378%;
+  width: 31.12164%;
   position: relative; }
   .trending-topic__item h3 {
     position: absolute;
@@ -145,7 +146,17 @@ h3 {
 
 .featured-content, .chef-of-the-month {
   width: 49%;
-  margin: 0 1%; }
+  margin: 0 1%;
+  position: relative;
+  padding-bottom: 47%; }
+  @media (max-width: 480px) {
+    .featured-content, .chef-of-the-month {
+      padding-bottom: 91%; } }
+
+.box--middle__inner {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
 
 .slider__box.first {
   width: 57.91667%;
@@ -286,6 +297,11 @@ body, html {
   float: right;
   margin-right: 17px;
   width: 22.5677%; }
+  @media (max-width: 1000px) {
+    .header__logo-container {
+      margin-right: 2%;
+      margin-left: 2%;
+      width: 20.5677%; } }
   @media (max-width: 480px) {
     .header__logo-container {
       margin-right: 17px;
@@ -310,6 +326,10 @@ body, html {
   float: right;
   padding: 2.08333% 5.72917%;
   width: 70%; }
+  @media (max-width: 1000px) {
+    .search {
+      width: 75%;
+      padding: 2.08333% 0.72917%; } }
   @media (max-width: 480px) {
     .search {
       display: none; } }
@@ -382,6 +402,8 @@ body, html {
   background: #F03D65;
   color: white;
   padding: 0 40px; }
+  .nav.active {
+    max-height: 173px; }
   @media (max-width: 480px) {
     .nav {
       padding: 0;
@@ -404,6 +426,9 @@ body, html {
       border-bottom: 1px solid #ccc; }
       .nav__item:nth-child(even) {
         border-right: 1px solid #ccc; } }
+
+.home img {
+  vertical-align: middle; }
 
 .footer {
   border-top: 3px solid #F03D65;
@@ -513,7 +538,8 @@ body, html {
     .footer-social {
       margin: 0 auto;
       float: none;
-      text-align: center; } }
+      text-align: center;
+      padding-bottom: 20px; } }
 
 .footer-social__item {
   height: 24px;
@@ -569,7 +595,8 @@ body, html {
 .slider__box-play-icon {
   position: absolute;
   top: 5%;
-  left: 4%; }
+  left: 4%;
+  width: 22%; }
 
 .overlay {
   position: absolute;
@@ -578,12 +605,12 @@ body, html {
 
 .day-menu {
   width: 100%;
-  border: 1px solid #A56170;
+  border: 1px solid #F03D65;
   padding: 3.15956%;
   overflow: hidden; }
   @media (max-width: 480px) {
     .day-menu {
-      padding: 8px;
+      padding: 8px 0;
       border: none; }
       .day-menu h3 {
         position: relative;
@@ -594,7 +621,7 @@ body, html {
 .day-menu__heading-container {
   width: 100%;
   float: right;
-  border-bottom: 2px solid #A56170; }
+  border-bottom: 2px solid #F03D65; }
 
 .day-menu__logo {
   height: 40px;
@@ -652,10 +679,41 @@ body, html {
   position: absolute;
   top: 5%;
   left: 4%;
-  z-index: 5; }
+  z-index: 5;
+  width: 9%; }
 
 .ch-item {
   position: relative; }
+
+.add__container {
+  width: 100%;
+  max-width: 996px;
+  margin: 0 auto; }
+  @media (max-width: 480px) {
+    .add__container {
+      display: none; } }
+
+.add, .add__top, .add__left, .add__right {
+  background-image: url("../../assets/img/add-pattern.png"); }
+
+.add__top {
+  height: 220px; }
+
+.add__left {
+  position: fixed;
+  height: 1100px;
+  width: 220px;
+  left: 50%;
+  margin-left: 498px;
+  top: 0; }
+
+.add__right {
+  position: fixed;
+  height: 1100px;
+  width: 220px;
+  right: 50%;
+  margin-right: 498px;
+  top: 0; }
 
 .featured-content {
   border: 1px solid #ccc; }
@@ -678,8 +736,9 @@ body, html {
 .featured-content__text {
   text-align: center;
   font-size: 1.6rem;
-  padding: 20px 20px 35px;
-  line-height: 26px; }
+  padding: 6.45161% 6.45161% 11.29032%;
+  line-height: 26px;
+  height: 34.74026%; }
 
 .chef-of-the-month {
   border: 1px solid #ccc;
@@ -692,30 +751,44 @@ body, html {
       margin: 0; } }
 
 .chef-of-the-month__heading {
-  padding: 18px 0; }
+  padding: 5.80645% 0;
+  height: 18.3871%;
+  margin-bottom: 2.05371%; }
+
+.chef-of-the-month__logo {
+  width: 15%; }
 
 .chef-of-the-month__image-wrap {
   border-radius: 50%;
-  margin-top: 7px; }
+  margin-top: 2.25806%; }
+
+.chef-of-the-month__image {
+  width: 28%; }
 
 .chef-of-the-month__name {
-  margin-top: 12px; }
+  margin-top: 3.87097%;
+  height: 3.87097%; }
 
 .chef-of-the-month__bottom-text {
   background: #F9F8F4;
-  height: 39px;
-  margin-top: 24px;
+  margin-top: 7.74194%;
   line-height: 40px;
   padding: 0 8px;
   display: block;
   float: right;
-  width: 100%; }
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: #f03d65; }
 
 .chef-of-the-month__bottom-left {
   float: left; }
 
 .chef-of-the-month__bottom-right {
   float: right; }
+
+.number {
+  margin: 5px; }
 
 .mpu {
   width: 100%;
@@ -776,16 +849,18 @@ body, html {
     display: inline; }
   @media (max-width: 480px) {
     .step-by-step-recipe {
-      margin-bottom: 34px; } }
+      margin-bottom: 34px; }
+      .step-by-step-recipe .ch-heading {
+        padding-top: 0; } }
 
 .trending-fb-recipes {
   float: right;
   border: 1px solid gray;
-  padding: 17px; }
+  padding: 2.68562%; }
   .trending-fb-recipes .heading-container {
     width: 100%;
     float: right;
-    border-bottom: 2px solid red; }
+    border-bottom: 2px solid #F03D65; }
   .trending-fb-recipes .heading {
     float: right;
     padding-top: 5px;
@@ -914,4 +989,4 @@ body, html {
   margin-top: 19px;
   line-height: 40px;
   height: 40px;
-  color: #D45779; }
+  color: #F03D65; }

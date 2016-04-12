@@ -53,6 +53,11 @@
   float: right;
   margin-right: 17px;
   width: cp(225px, 997px);
+  @include breakpoint(xmedium) {
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 20.5677%;
+  }
   @include breakpoint(mobile) {
     margin-right: 17px;
     width: 22.5677%;
@@ -77,6 +82,10 @@
   float: right;
   padding: cp(20px, 960px) cp(55px,960px);
   width: 70%;
+  @include breakpoint(xmedium) {
+    width: 75%;
+    padding:2.08333% 0.72917%;
+  }
   @include breakpoint(mobile) {
     display: none;
   }

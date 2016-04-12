@@ -1,10 +1,10 @@
 .day-menu {
   width:100%;
-  border:1px solid #A56170;
+  border:1px solid #F03D65;
   padding:cp(20px,633px);
   overflow: hidden;
   @include breakpoint(mobile) {
-    padding: 8px;
+    padding: 8px 0;
     border:none;
     h3 {
       position: relative;
@@ -17,7 +17,7 @@
 .day-menu__heading-container {
   width: 100%;
   float: right;
-  border-bottom:2px solid #A56170;
+  border-bottom:2px solid #F03D65;
 }
 .day-menu__logo {
   height: 40px;

@@ -21,6 +21,7 @@
 .featured-content__text {
   text-align: center;
   font-size: calc-rem(24px);
-  padding: 20px 20px 35px;
+  padding: cp(20px,310px) cp(20px,310px) cp(35px,310px);
   line-height: 26px;
+  height: cp(107px, 308px);
 }

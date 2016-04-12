@@ -3,6 +3,9 @@
   background: #F03D65;
   color:white;
   padding:0 40px;
+  &.active {
+    max-height: 173px;
+  }
   @include breakpoint(mobile) {
     padding:0;
     overflow: hidden;
@@ -26,4 +29,7 @@
       border-right: 1px solid #ccc;
     }
   }
+}
+.home img {
+  vertical-align: middle;
 }

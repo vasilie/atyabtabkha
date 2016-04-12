@@ -1,11 +1,11 @@
 .trending-fb-recipes {
   float: right;
   border: 1px solid gray;
-  padding: 17px;
+  padding: cp(17px, 633px);
   .heading-container {
     width: 100%;
     float: right;
-    border-bottom:2px solid red;
+    border-bottom:2px solid #F03D65;
   }
   .heading {
     float: right;

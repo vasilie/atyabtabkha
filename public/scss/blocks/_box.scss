@@ -17,19 +17,20 @@
     line-height: 20px;
     width: 100%;
     padding: 4%;
-    bottom: 0;
+    bottom: 12px;
     font-size: calc-rem(20px);
     font-weight: 300;
     line-height: 25px;
     z-index: 3;
     @include breakpoint(mobile) {
       font-size: calc-rem(17px) !important;
+      bottom: 0px;
     }
   }
 }
 %box--small {
   @extend %box;
-  width: cp(191px, 633px);
+  width: cp(197px, 633px);
   position: relative;
   h3 {
     position: absolute;
@@ -47,6 +48,16 @@
   @extend %box;
   width:49%;
   margin:0 1%;
+  position: relative;
+  padding-bottom: 47%;
+  @include breakpoint(mobile) {
+    padding-bottom: 91%;
+  }
+}
+.box--middle__inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 %box--large {
   @extend %box;

@@ -1,0 +1,36 @@
+.add__container {
+  width: 100%;
+  max-width: 996px;
+  margin: 0 auto;
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+.add {
+  background-image: url("../../assets/img/add-pattern.png");
+}
+.add__top {
+  // background: red;
+  height: 220px;
+  @extend .add;
+}
+.add__left {
+  position: fixed;
+  height: 1100px;
+  // background: blue;
+  width: 220px;
+  left: 50%;
+  margin-left: 498px;
+  top: 0;
+  @extend .add;
+}
+.add__right {
+  position: fixed;
+  height: 1100px;
+  // background: cyan;
+  width: 220px;
+  right: 50%;
+  margin-right: 498px;
+  top: 0;
+  @extend .add;
+}
