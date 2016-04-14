@@ -790,12 +790,14 @@ body, html {
 .number {
   margin: 5px; }
 
-.mpu {
+.mpu__container {
   width: 100%;
-  margin-bottom: 33px; }
-  @media (max-width: 480px) {
-    .mpu {
-      margin-bottom: 12px; } }
+  padding-bottom: 84%;
+  position: relative; }
+  .mpu__container .mpu {
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 .banner__container {
   width: 100%;
@@ -841,6 +843,19 @@ body, html {
     .trending-topic__image--mobile {
       display: block !important;
       width: 100%; } }
+
+.article {
+  width: 100%; }
+
+.article__heading {
+  padding: 33px 0 13px; }
+
+.article__item {
+  width: 100%; }
+
+.article__text {
+  margin: 36px 0 0;
+  line-height: 27px; }
 
 .step-by-step-recipe {
   position: relative;
