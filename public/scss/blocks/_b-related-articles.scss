@@ -1,0 +1,11 @@
+.related-articles {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 69px;
+}
+.related-articles__item {
+  @extend %box--small;
+  @extend .bg-mask;
+  overflow: hidden;
+  margin: cp(10px,633px);
+}

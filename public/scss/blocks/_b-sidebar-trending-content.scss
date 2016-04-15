@@ -1,0 +1,43 @@
+.sb-trending {
+  width: 100%;
+  border:1px solid #ccc;
+  overflow: hidden;
+  padding: 5%;
+  margin-top: 38px;
+  margin-bottom: 29px;
+}
+.sb-trending__heading-container {
+  width: 100%;
+  float: right;
+  border-bottom: 2px solid #F03D65;
+  margin-bottom: 24px;
+}
+.sb-trending__logo {
+  margin-top: 10px;
+  float: left;
+  height: auto;
+}
+.sb-trending__heading {
+  float: right;
+  padding-top: 5px;
+  margin-bottom: 14px;
+}
+.sb-trending__item {
+  float: right;
+  width: 100%;
+  margin-bottom: 23px;
+  position: relative;
+}
+.sb-trending__image {
+  width: 47%;
+  float: right;
+}
+.sb-trending__content {
+  width: 53%;
+  float: right;
+  padding-right: 6%;
+}
+.sb-trending__text {
+  font-size: 19px;
+  line-height: 22px;
+}
