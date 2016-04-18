@@ -211,21 +211,22 @@ h3 {
 body, html {
   direction: rtl; }
 
-.wrapper {
-  outline: 1px solid red;
-  max-width: 1250px;
+.wrapper, .page-wrapper--transparent {
+  width: 100%;
+  max-width: 986px;
   position: relative;
-  margin: 0 auto;
-  padding: 100px; }
-  .wrapper .page-wrapper, .wrapper .page-wrapper--no-padding-mobile, .wrapper .page-wrapper--transparent, .wrapper .header-wrapper {
+  margin: 0 auto; }
+  .wrapper .page-wrapper, .page-wrapper--transparent .page-wrapper, .wrapper .page-wrapper--no-padding-mobile, .page-wrapper--transparent .page-wrapper--no-padding-mobile, .wrapper .header-wrapper, .page-wrapper--transparent .header-wrapper {
     display: block;
-    outline: 1px solid blue;
     width: 100%;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 0 18px; }
 
-.ua-visitor-device-tablet .wrapper {
-  width: 1150px; }
+.ua-visitor-device-tablet .wrapper, .ua-visitor-device-tablet .page-wrapper--transparent {
+  width: 1186px;
+  max-width: 1286px;
+  padding: 100px; }
 
 @media (max-width: 480px) {
   .page-wrapper--no-padding-mobile {
@@ -235,7 +236,10 @@ body, html {
   background: transparent; }
 
 .header-wrapper {
-  padding: 0; }
+  padding: 0;
+  width: 100%;
+  max-width: 988px;
+  margin: 0 auto; }
 
 .division, .division--8, .division--4 {
   float: right; }
@@ -438,7 +442,9 @@ body, html {
   border-top: 3px solid #F03D65;
   background: #F7F5E6;
   overflow: hidden;
-  clear: both; }
+  clear: both;
+  z-index: 12000;
+  position: relative; }
 
 .footer__top {
   overflow: hidden;
@@ -696,7 +702,11 @@ body, html {
   position: fixed;
   z-index: 999;
   overflow: visible;
-  outline: 1px solid red; }
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 999;
+  height: 215px; }
   @media (max-width: 480px) {
     .add__container {
       display: none; } }
@@ -705,8 +715,7 @@ body, html {
   background-image: url("../../assets/img/add-pattern.png"); }
 
 .add__top {
-  height: 220px;
-  display: none; }
+  height: 215px; }
 
 .add__left {
   position: fixed;
@@ -714,7 +723,7 @@ body, html {
   height: 1100px;
   width: 220px;
   left: 50%;
-  margin-left: -697px;
+  margin-left: -713px;
   top: 0; }
 
 .add__right {
@@ -723,7 +732,7 @@ body, html {
   height: 1100px;
   width: 220px;
   right: 50%;
-  margin-right: -697px;
+  margin-right: -713px;
   top: 0; }
 
 .featured-content {
@@ -803,12 +812,10 @@ body, html {
 
 .mpu__container {
   width: 100%;
-  position: relative;
-  outline: 1px solid red; }
+  position: relative; }
   .mpu__container .mpu {
     top: 0;
-    right: 0;
-    outline: 1px solid orange; }
+    right: 0; }
 
 .banner__container {
   width: 100%;

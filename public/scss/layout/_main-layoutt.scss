@@ -12,32 +12,23 @@ body, html {
 
 
 .wrapper {
-
-  outline: 1px solid red;
-  //width: 100%;
-  max-width: 1250px;
+  width:100%;
+  max-width: 986px;
   position: relative;
   margin: 0 auto;
-  padding: 100px;
     .page-wrapper {
-      //margin: 0 100px;
       display: block;
-      outline: 1px solid blue;
       width: 100%;
       position: relative;
       overflow: hidden;
-      // padding:0 18px;
-
-
-
-
+      padding:0 18px;
   }
-
 }
 .ua-visitor-device-tablet {
   .wrapper {
-    width:1150px;
-    // float: left;
+    width:1186px;
+    max-width: 1286px;
+    padding: 100px;
     //border-top:10px solid cyan;
   }
 }
@@ -49,12 +40,15 @@ body, html {
   }
 }
 .page-wrapper--transparent {
-  @extend .page-wrapper;
+  @extend .wrapper;
   background: transparent;
 }
 .header-wrapper {
   @extend .page-wrapper;
   padding:0;
+  width: 100%;
+  max-width: 988px;
+  margin: 0 auto;
 }
 .division {
   float: right;

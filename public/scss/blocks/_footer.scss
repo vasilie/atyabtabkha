@@ -3,6 +3,8 @@
   background: #F7F5E6;
   overflow: hidden;
   clear: both;
+  z-index: 12000;
+  position: relative;
 }
 .footer__top {
   overflow: hidden;

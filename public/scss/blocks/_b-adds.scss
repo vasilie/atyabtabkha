@@ -6,8 +6,13 @@
   position: fixed;
   z-index: 999;
   overflow: visible;
-  outline: 1px solid red;
+  // outline: 1px solid red;
   // display: none;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 999;
+  height: 215px;
 
   @include breakpoint(mobile) {
     display: none;
@@ -18,8 +23,8 @@
 }
 .add__top {
   // background: red;
-  height: 220px;
-  display: none;
+  height: 215px;
+  // display: none;
   @extend .add;
 }
 .add__left {
@@ -30,7 +35,7 @@
   // background: blue;
   width: 220px;
   left: 50%;
-  margin-left: -697px;
+  margin-left: -713px;
   // @include breakpoint(xmedium) {
   //   margin-left: 43.41304%;
   // }
@@ -46,7 +51,7 @@
   // background: cyan;
   width: 220px;
   right:  50%;
-  margin-right:-697px;
+  margin-right:-713px;
   // @include breakpoint(xmedium) {
   //   margin-right: 43.41304%;
   // }
