@@ -65,7 +65,7 @@ html {
   font-size: 15px;
   font-weight: 300;
   color: #333; }
-  @media (max-width: 1000px) {
+  @media (max-width: 1150px) {
     html {
       font-size: 12px; } }
   @media (max-width: 600px) {
@@ -212,16 +212,23 @@ body, html {
   direction: rtl; }
 
 .page-wrapper, .page-wrapper--no-padding-mobile, .page-wrapper--transparent, .header-wrapper {
-  width: 100%;
-  max-width: 997px;
+  display: none; }
+
+.wrapper {
+  outline: 1px solid red;
+  max-width: 1250px;
+  position: relative;
   margin: 0 auto;
-  background: white;
-  height: 100%;
-  padding: 0 18px;
-  overflow: hidden; }
-  @media (max-width: 480px) {
-    .page-wrapper, .page-wrapper--no-padding-mobile, .page-wrapper--transparent, .header-wrapper {
-      padding: 0 10px; } }
+  padding: 100px; }
+  .wrapper .page-wrapper, .wrapper .page-wrapper--no-padding-mobile, .wrapper .page-wrapper--transparent, .wrapper .header-wrapper {
+    display: block;
+    outline: 1px solid blue;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+
+.ua-visitor-device-tablet .wrapper {
+  width: 1250px; }
 
 @media (max-width: 480px) {
   .page-wrapper--no-padding-mobile {
@@ -297,7 +304,7 @@ body, html {
   float: right;
   margin-right: 17px;
   width: 22.5677%; }
-  @media (max-width: 1000px) {
+  @media (max-width: 1150px) {
     .header__logo-container {
       margin-right: 2%;
       margin-left: 2%;
@@ -326,7 +333,7 @@ body, html {
   float: right;
   padding: 2.08333% 5.72917%;
   width: 70%; }
-  @media (max-width: 1000px) {
+  @media (max-width: 1150px) {
     .search {
       width: 75%;
       padding: 2.08333% 0.72917%; } }
@@ -687,7 +694,6 @@ body, html {
 
 .add__container {
   width: 100%;
-  max-width: 996px;
   margin: 0 auto; }
   @media (max-width: 480px) {
     .add__container {
@@ -714,6 +720,12 @@ body, html {
   right: 50%;
   margin-right: 498px;
   top: 0; }
+
+.ua-visitor-device-tablet .add__right {
+  margin-right: 37.71304%; }
+
+.ua-visitor-device-tablet .add__left {
+  margin-left: 37.71304%; }
 
 .featured-content {
   border: 1px solid #ccc; }
@@ -802,7 +814,9 @@ body, html {
 .banner__container {
   width: 100%;
   text-align: center;
-  padding: 30px 0 63px; }
+  padding: 30px 0 63px;
+  background: white;
+  position: relative; }
   .banner__container .banner {
     width: 100%;
     max-width: 735px; }
@@ -1186,3 +1200,39 @@ body, html {
   height: 21px; }
   .rating__item.active {
     background-image: url(../../assets/img/star.png); }
+
+.poll {
+  width: 100%;
+  margin-top: 46px;
+  border: 1px solid #ccc; }
+
+.poll__item {
+  width: 100%; }
+
+.poll__content {
+  padding-right: 7.84314%; }
+
+.poll__heading {
+  font-size: 24px;
+  margin-top: 19px;
+  margin-bottom: 40px; }
+
+.poll__list__item {
+  font-size: 17px;
+  margin-bottom: 18px; }
+  .poll__list__item input {
+    float: right;
+    margin-left: 20px;
+    width: 16px;
+    height: 17px;
+    margin: 0 0 0 37px; }
+
+.poll__button-container {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  text-align: center; }
+  .poll__button-container .button, .poll__button-container .button--slim, .poll__button-container .featured-video .ch-button, .featured-video .poll__button-container .ch-button, .poll__button-container .step-by-step-recipe .ch-button, .step-by-step-recipe .poll__button-container .ch-button, .poll__button-container .featured-content__button {
+    display: inline-block;
+    float: none;
+    padding: 0 55px; }

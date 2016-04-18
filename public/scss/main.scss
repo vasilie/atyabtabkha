@@ -6,7 +6,8 @@
 @import 'utilities/helpers';
 @import "blocks/box";
 @import "blocks/b-buttons";
-@import "layout/main-layout";
+// @import "layout/main-layout";
+@import "layout/main-layoutt";
 @import "blocks/header";
 @import "blocks/navigation";
 @import "blocks/footer";
@@ -29,3 +30,4 @@
 @import "blocks/b-comments";
 @import "blocks/b-sidebar-trending-content";
 @import "blocks/b-rating-stars";
+@import "blocks/b-poll";

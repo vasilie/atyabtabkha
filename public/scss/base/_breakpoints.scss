@@ -6,7 +6,7 @@
      @media (max-width: 600px)  { @content ; }
   }
   @if $point == xmedium {
-     @media (max-width: 1000px)  { @content ; }
+     @media (max-width: 1150px)  { @content ; }
   }
   @if $point == large {
      @media (min-width: 2000px)  { @content ; }

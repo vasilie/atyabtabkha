@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>atyabtabkha</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/main.css">
   <script type="text/javascript" src='../bower_components/ua-parser-js/src/ua-parser.js'></script>
   <script type="text/javascript" src='../bower_components/ua-parser-diwanee-js/src/ua-parser-diwanee.js'></script>
+  <link rel="stylesheet" href="assets/css/main.css">
   <script>
-    // if (document.getElementsByTagName('body').h)
-  </script>
+  var html = document.getElementsByTagName("html"),
+      head = document.getElementsByTagName("head"),
+      meta_viewport = document.getElementById("meta-viewport");
+  if(html[0].getAttribute("class").indexOf("ua-visitor-device-tablet") == -1){
+    var viewport = '<meta name="viewport" content="width=device-width, initial-scale=1" id="meta-viewport">';
+    document.write(viewport);
+  }
 
   </script>
   <!-- OpenX header script -->

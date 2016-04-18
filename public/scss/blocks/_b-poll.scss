@@ -1,0 +1,38 @@
+.poll {
+  width: 100%;
+  margin-top: 46px;
+  border:1px solid #ccc;
+}
+.poll__item {
+  width: 100%;
+}
+.poll__content {
+  padding-right: cp(24px, 306px);
+}
+.poll__heading {
+  font-size: 24px;
+  margin-top: 19px;
+  margin-bottom: 40px;
+}
+.poll__list__item {
+  font-size: 17px;
+  margin-bottom: 18px;
+  input {
+    float: right;
+    margin-left: 20px;
+    width: 16px;
+    height: 17px;
+    margin: 0 0 0 37px;
+  }
+}
+.poll__button-container {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  text-align: center;
+  .button {
+    display: inline-block;
+    float: none;
+    padding: 0 55px
+  }
+}

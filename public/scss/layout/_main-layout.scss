@@ -1,19 +1,60 @@
 body, html {
   direction: rtl;
   // background: #0CD4C6;
+  // width: 1150px;
+  padding: 20px;
+
+}
+.expander {
+  padding: 0 775px;
+  height: 1px;
+  // width: 1150px;
+  // display: none;
+}
+.ua-visitor-device-tablet {
+  body, html {
+    // margin: 0;
+    // padding: 5%;
+  }
+
+  .page-wrapper {
+    width: 100%;
+
+    max-width: 1050px;
+    margin: 0 auto;
+    background: white;
+    height: 100%;
+    //padding: 0 cp(93px,1150px);
+    // padding:0 18px;
+    overflow: hidden;
+    // width: 1150px;
+    // padding:0 50px;
+    // padding: 0 5%;
+  }
+  .wrapper {
+    outline: 1px solid green;
+    margin: 0 auto;
+    //padding: 0 50px;
+    position: relative;
+    // padding:0 18px;
+    width: 100%;
+  }
 }
 .page-wrapper {
+  outline: 1px solid blue;
   width: 100%;
   max-width: 997px;
   margin:0 auto;
   background: white;
   height: 100%;
+  position:relative;
   padding:0 18px;
   overflow: hidden;
   @include breakpoint(mobile) {
     padding: 0 10px;
   }
 }
+
 .page-wrapper--no-padding-mobile {
   @extend .page-wrapper;
   @include breakpoint(mobile) {

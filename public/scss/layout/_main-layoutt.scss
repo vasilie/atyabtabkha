@@ -1,0 +1,77 @@
+body, html {
+  direction: rtl;
+  // background: #0CD4C6;
+  // width: 1150px;
+
+}
+
+
+.page-wrapper {
+  display: none;
+}
+
+
+.wrapper {
+
+  outline: 1px solid red;
+  //width: 100%;
+  max-width: 1250px;
+  position: relative;
+  margin: 0 auto;
+  padding: 100px;
+    .page-wrapper {
+      //margin: 0 100px;
+      display: block;
+      outline: 1px solid blue;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      // padding:0 18px;
+
+
+
+
+  }
+
+}
+.ua-visitor-device-tablet {
+  .wrapper {
+    width:1250px;
+    // float: left;
+    //border-top:10px solid cyan;
+  }
+}
+
+.page-wrapper--no-padding-mobile {
+  @extend .page-wrapper;
+  @include breakpoint(mobile) {
+    padding:0;
+  }
+}
+.page-wrapper--transparent {
+  @extend .page-wrapper;
+  background: transparent;
+}
+.header-wrapper {
+  @extend .page-wrapper;
+  padding:0;
+}
+.division {
+  float: right;
+}
+.division--8 {
+  @extend .division;
+  width: 65.96%;
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
+}
+.division--4 {
+  @extend .division;
+  width: 34%;
+  padding-right: cp(20px,960px);
+  @include breakpoint(mobile) {
+    width: 100%;
+    padding: 0;
+  }
+}
