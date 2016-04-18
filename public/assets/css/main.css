@@ -209,10 +209,8 @@ h3 {
   padding: 0px 20px; }
 
 body, html {
-  direction: rtl; }
-
-.page-wrapper, .page-wrapper--no-padding-mobile, .page-wrapper--transparent, .header-wrapper {
-  display: none; }
+  direction: rtl;
+  width: 130px; }
 
 .wrapper {
   outline: 1px solid red;
@@ -228,7 +226,7 @@ body, html {
     overflow: hidden; }
 
 .ua-visitor-device-tablet .wrapper {
-  width: 1250px; }
+  width: 1150px; }
 
 @media (max-width: 480px) {
   .page-wrapper--no-padding-mobile {
@@ -694,7 +692,12 @@ body, html {
 
 .add__container {
   width: 100%;
-  margin: 0 auto; }
+  width: 1000px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+  overflow: visible;
+  outline: 1px solid red; }
   @media (max-width: 480px) {
     .add__container {
       display: none; } }
@@ -703,29 +706,26 @@ body, html {
   background-image: url("../../assets/img/add-pattern.png"); }
 
 .add__top {
-  height: 220px; }
+  height: 220px;
+  display: none; }
 
 .add__left {
   position: fixed;
+  z-index: 999;
   height: 1100px;
   width: 220px;
   left: 50%;
-  margin-left: 498px;
+  margin-left: -697px;
   top: 0; }
 
 .add__right {
   position: fixed;
+  z-index: 998;
   height: 1100px;
   width: 220px;
   right: 50%;
-  margin-right: 498px;
+  margin-right: -697px;
   top: 0; }
-
-.ua-visitor-device-tablet .add__right {
-  margin-right: 37.71304%; }
-
-.ua-visitor-device-tablet .add__left {
-  margin-left: 37.71304%; }
 
 .featured-content {
   border: 1px solid #ccc; }
@@ -804,12 +804,12 @@ body, html {
 
 .mpu__container {
   width: 100%;
-  padding-bottom: 84%;
-  position: relative; }
+  position: relative;
+  outline: 1px solid red; }
   .mpu__container .mpu {
-    position: absolute;
     top: 0;
-    left: 0; }
+    right: 0;
+    outline: 1px solid orange; }
 
 .banner__container {
   width: 100%;

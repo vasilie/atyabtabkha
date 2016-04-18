@@ -1,8 +1,14 @@
 .add__container {
   width: 100%;
-  // width: 1000px;
-  // max-width: 1150px;
+  width: 1000px;
+  // max-width: 950px;
   margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+  overflow: visible;
+  outline: 1px solid red;
+  // display: none;
+
   @include breakpoint(mobile) {
     display: none;
   }
@@ -13,15 +19,18 @@
 .add__top {
   // background: red;
   height: 220px;
+  display: none;
   @extend .add;
 }
 .add__left {
   position: fixed;
+  z-index: 999;
+  // display: none;
   height: 1100px;
   // background: blue;
   width: 220px;
   left: 50%;
-  margin-left: 498px;
+  margin-left: -697px;
   // @include breakpoint(xmedium) {
   //   margin-left: 43.41304%;
   // }
@@ -30,12 +39,14 @@
   @extend .add;
 }
 .add__right {
+  // display: none;
   position: fixed;
+  z-index: 998;
   height: 1100px;
   // background: cyan;
   width: 220px;
-  right: 50%;
-  margin-right: 498px;
+  right:  50%;
+  margin-right:-697px;
   // @include breakpoint(xmedium) {
   //   margin-right: 43.41304%;
   // }
@@ -44,9 +55,9 @@
 }
 .ua-visitor-device-tablet {
   .add__right {
-    margin-right: 37.71304%;
+    //margin-right: 37.71304%;
   }
   .add__left {
-    margin-left: 37.71304%;
+    //margin-left: 37.71304%;
   }
 }
