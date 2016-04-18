@@ -209,8 +209,7 @@ h3 {
   padding: 0px 20px; }
 
 body, html {
-  direction: rtl;
-  width: 130px; }
+  direction: rtl; }
 
 .wrapper {
   outline: 1px solid red;
