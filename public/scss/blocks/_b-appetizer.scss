@@ -1,0 +1,30 @@
+.appetizer__container {
+  width: 100%;
+}
+.appetizer__heading {
+  padding: 39px 0 12px;
+}
+.appetizer {
+  width: 30%;
+  margin:0 2.5%;
+  float: right;
+  position: relative;
+  h3 {
+    position: absolute;
+    bottom: 30px;
+    padding: 0 25px;
+  }
+}
+.appetizer:nth-child(3){
+  margin-right: 0;
+}
+.appetizer:nth-child(5){
+  margin-left: 0;
+}
+.appetizer--big {
+  width: 100%;
+  margin:0;
+}
+.appetizer__item {
+  width: 100%;
+}

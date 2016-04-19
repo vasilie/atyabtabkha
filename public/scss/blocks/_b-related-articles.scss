@@ -8,4 +8,23 @@
   @extend .bg-mask;
   overflow: hidden;
   margin: cp(10px,633px);
+  @include breakpoint(mobile) {
+    width: 47%;
+    margin-bottom: 28px;
+    h3 {
+      position: relative;
+    }
+  }
+}
+.related-articles .related-articles__item:nth-child(odd){
+  @include breakpoint(mobile) {
+    margin-right: 0;
+    float: right;
+  }
+}
+.related-articles .related-articles__item:nth-child(even){
+  @include breakpoint(mobile) {
+    margin-left: 0;
+    float: left;
+  }
 }

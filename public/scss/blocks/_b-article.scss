@@ -1,5 +1,6 @@
 .article {
   width: 100%;
+  padding-top: 7px;
 }
 .article__heading {
   padding: 33px 0 20px;
@@ -10,16 +11,28 @@
   margin-bottom: 7px;
   .social {
     margin-top: 23px;
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
   }
 }
 .article__author__image-wrapper {
   float: right;
   border-radius: 50%;
 }
+.article__author__image {
+  @include breakpoint(mobile) {
+    width: 47px;
+  }
+}
 .article__author__name {
   float: right;
   margin-right: 17px;
   padding-top: 30px;
+  @include breakpoint(mobile) {
+    margin-right: 11px;
+    padding-top: 18px;
+  }
 }
 .social {
   float: left;
@@ -34,6 +47,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  @include breakpoint(mobile) {
+    width: 40px;
+    height: 40px;
+  }
 }
 .twitter {
   background-image: url("../../assets/img/twitter-ico.png");
@@ -42,6 +59,9 @@
 .facebook {
   background-image: url("../../assets/img/fb-ico.png");
   background-size: 11px;
+  @include breakpoint(mobile) {
+    background-size: 14px;
+  }
 }
 .whatsup {
   background-image: url("../../assets/img/whatsup-ico.png");
@@ -52,10 +72,18 @@
   height: 33px;
   padding: 12px;
   border-right: 1px solid #ccc;
+  @include breakpoint(mobile) {
+    height: 40px;
+    padding: 12px 18px;
+    font-size: 16px;
+  }
 }
 .social__item {
   display: inline-block;
   margin-right: 9px;
+  @include breakpoint(mobile) {
+    margin-right: 10px;
+  }
 }
 .article__item {
   width: 100%;

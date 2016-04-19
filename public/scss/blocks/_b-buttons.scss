@@ -17,3 +17,22 @@
   line-height: 34px;
   padding: 0px 20px;
 }
+.like-button {
+  width: 40px;
+  height: 40px;
+  background-image: url('../../assets/img/like-icon-inactive.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  &.active {
+    background-image: url('../../assets/img/like-icon-active.png');
+  }
+}
+.play-button {
+  width: 40px;
+  height: 40px;
+  background-image: url('../../assets/img/play-icon-large.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+}

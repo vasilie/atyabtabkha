@@ -1,0 +1,22 @@
+.pagination {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 40px;
+  margin-top: 18px;
+  float: left;
+}
+.pagination__item {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background: white;
+  color: #ccc;
+  line-height: 30px;
+  margin: 1px;
+  border: 1px solid #ccc;
+  &.active {
+    background: #F03D65;
+    color: white;
+  }
+}

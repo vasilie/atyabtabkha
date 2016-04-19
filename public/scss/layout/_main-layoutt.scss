@@ -1,19 +1,9 @@
 body, html {
   direction: rtl;
-  // background: #0CD4C6;
-  // width: 130px;
-
 }
-
-
-.page-wrapper {
-  // display: none;
-}
-
-
 .wrapper {
   width:100%;
-  max-width: 986px;
+  max-width: 998px;
   position: relative;
   margin: 0 auto;
     .page-wrapper {
@@ -22,6 +12,9 @@ body, html {
       position: relative;
       overflow: hidden;
       padding:0 18px;
+      @include breakpoint(mobile) {
+        padding:0 11px;
+      }
   }
 }
 .ua-visitor-device-tablet {
@@ -29,10 +22,8 @@ body, html {
     width:1186px;
     max-width: 1286px;
     padding: 100px;
-    //border-top:10px solid cyan;
   }
 }
-
 .page-wrapper--no-padding-mobile {
   @extend .page-wrapper;
   @include breakpoint(mobile) {
@@ -47,7 +38,7 @@ body, html {
   @extend .page-wrapper;
   padding:0;
   width: 100%;
-  max-width: 988px;
+  max-width: 998px;
   margin: 0 auto;
 }
 .division {

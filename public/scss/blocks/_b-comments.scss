@@ -6,14 +6,23 @@
     width: 90%;
     height: 105px;
     float: left;
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
   }
 }
 .comments__user-image {
   width: 8%;
   margin-right: 1%;
+  @include breakpoint(mobile) {
+    width: 43px;
+  }
 }
 .comments__heading {
   margin-bottom: 37px;
+  @include breakpoint(mobile) {
+    margin-bottom: 10px;
+  }
 }
 .comments__button {
   float: left;
@@ -22,4 +31,15 @@
   margin-top: 25px;
   color: white;
   font-size: 16px;
+  @include breakpoint(mobile) {
+    float: none;
+    display: inline-block;
+  }
+}
+.comments__button__container {
+  @include breakpoint(mobile) {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+  }
 }
