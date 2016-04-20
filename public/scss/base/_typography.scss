@@ -11,7 +11,7 @@ html {
 	font-size: $base__font-size;
   font-weight:300;
   color: #333;
-  @include breakpoint(xmedium) {
+  @include breakpoint(mediumTypo) {
     font-size: 12px;
   }
   @include breakpoint(medium) {

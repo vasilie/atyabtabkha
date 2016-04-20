@@ -10,12 +10,12 @@
   padding-right: cp(24px, 306px);
 }
 .poll__heading {
-  font-size: 24px;
+  font-size: calc-rem(24px);
   margin-top: 19px;
   margin-bottom: 40px;
 }
 .poll__list__item {
-  font-size: 17px;
+  font-size: calc-rem(17px);
   margin-bottom: 18px;
   input {
     float: right;

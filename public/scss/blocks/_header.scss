@@ -133,7 +133,7 @@
 .submit-recipe, .sub-section{
   width: 50%;
   float: right;
-  font-size: 15px;
+  font-size: calc-rem(15px);
 }
 .sub-section {
   text-align: center;

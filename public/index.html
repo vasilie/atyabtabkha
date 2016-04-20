@@ -11,14 +11,12 @@
       head = document.getElementsByTagName("head"),
       meta_viewport = document.getElementById("meta-viewport");
   if(html[0].getAttribute("class").indexOf("ua-visitor-device-tablet") == -1){
-    // head[0].removeChild(meta_viewport);
     var viewport = '<meta name="viewport" content="width=device-width, initial-scale=1" id="meta-viewport">';
     document.write(viewport);
   } else {
     var viewport = '<meta name="viewport" content="width=1300" id="meta-viewport">';
     document.write(viewport);
   }
-
   </script>
   <!-- OpenX header script -->
 <script type="text/javascript" src="http://diwanee-d.openx.net/w/1.0/jstag"></script>
@@ -447,6 +445,6 @@
   </div>
 <!-- #Footer End -->
 <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="js/main.min.js"></script>
+<script type="text/javascript" src="assets/js/main.min.js"></script>
 </body>
 </html>

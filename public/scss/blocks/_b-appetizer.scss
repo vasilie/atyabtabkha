@@ -5,14 +5,17 @@
   padding: 39px 0 12px;
 }
 .appetizer {
-  width: 30%;
-  margin:0 2.5%;
+  width: 31.66%;
+  margin: 1.255%;
   float: right;
   position: relative;
   h3 {
     position: absolute;
     bottom: 30px;
     padding: 0 25px;
+  }
+  @include breakpoint(mobile) {
+    display: none;
   }
 }
 .appetizer:nth-child(3){
@@ -24,6 +27,9 @@
 .appetizer--big {
   width: 100%;
   margin:0;
+  @include breakpoint(mobile) {
+    display: block;
+  }
 }
 .appetizer__item {
   width: 100%;

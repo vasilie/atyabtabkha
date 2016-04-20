@@ -1,0 +1,39 @@
+.appetizer-info {
+  width: 100%;
+  float: right;
+  width: 100%;
+  float: right;
+  margin-bottom: 31px;
+  background: #FAFAFA;
+  padding: 32px 38px;
+  @include breakpoint(mobile) {
+    padding: 23px 8px;
+  }
+  .social {
+    float: right;
+    margin-top: 29px;
+  }
+  .social__item {
+    margin-right: 4px;
+  }
+  .social__item__image {
+    width: 30px;
+    height: 30px;
+  }
+  .social__item__info {
+    height: 30px;
+    padding: 9px 12px;
+  }
+}
+.appetizer-info__heading {
+  font-size: calc-rem(24px);
+  margin-bottom: 17px;
+}
+.appetizer-info__text {
+  line-height: 22px;
+}
+.appetizer-info__button {
+  font-size: calc-rem(11px);
+  color: #F03D65;
+  display: block;
+}

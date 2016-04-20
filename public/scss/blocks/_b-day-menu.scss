@@ -49,7 +49,7 @@
   }
   @include breakpoint(mobile) {
     h3 {
-      font-size: 14px !important;
+      font-size: calc-rem(14px) !important;
       line-height: 21px;
     }
   }

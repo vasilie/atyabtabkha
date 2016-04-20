@@ -5,11 +5,11 @@
   @if $point == medium {
      @media (max-width: 600px)  { @content ; }
   }
+  @if $point == mediumTypo {
+    @media (max-width: 900px)  { @content ; }
+  }
   @if $point == xmedium {
      @media (max-width: 1150px)  { @content ; }
-  }
-  @if $point == large {
-     @media (min-width: 2000px)  { @content ; }
   }
   @if $point == iphone4 {
      @media (min-device-width : 320px) and (max-height: 450px) { @content ; }

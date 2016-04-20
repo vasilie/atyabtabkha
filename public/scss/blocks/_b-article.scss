@@ -75,7 +75,7 @@
   @include breakpoint(mobile) {
     height: 40px;
     padding: 12px 18px;
-    font-size: 16px;
+    font-size: calc-rem(16px);
   }
 }
 .social__item {
@@ -93,4 +93,26 @@
 .article__text {
   margin-bottom: 36px;
   line-height: 27px;
+}
+.article__social {
+  overflow: hidden;
+  margin: 33px 0;
+  .social {
+    @include breakpoint(mobile) {
+      display: inline-block;
+      float: none;
+      margin-bottom: 20px;
+    }
+  }    
+}
+.article__button {
+  @extend .button;
+  p {
+    float: right;
+  }
+  img {
+    float: right;
+    margin-top: 7px;
+    margin-left: 14px;
+  }
 }

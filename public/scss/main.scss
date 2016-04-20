@@ -3,11 +3,14 @@
 @import "base/typography";
 @import "base/functions";
 @import "base/headings";
+
 @import 'utilities/helpers';
-@import "blocks/box";
-@import "blocks/b-buttons";
+@import "utilities/box";
+
 // @import "layout/main-layout";
 @import "layout/main-layoutt";
+
+@import "blocks/b-buttons";
 @import "blocks/header";
 @import "blocks/navigation";
 @import "blocks/footer";
@@ -34,3 +37,7 @@
 @import "blocks/b-appetizer";
 @import "blocks/b-recipe-list";
 @import "blocks/b-pagination";
+@import "blocks/b-appetizer-info";
+
+
+@import "pages/category-page";
