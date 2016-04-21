@@ -1,4 +1,4 @@
-.day-menu {
+.b-day-menu {
   width:100%;
   border:1px solid #F03D65;
   padding:cp(20px,633px);
@@ -14,12 +14,12 @@
     }
   }
 }
-.day-menu__heading-container {
+.b-day-menu__heading-container {
   width: 100%;
   float: right;
   border-bottom:2px solid #F03D65;
 }
-.day-menu__logo {
+.b-day-menu__logo {
   height: 40px;
   width: 106px;
   margin-top: -8px;
@@ -29,13 +29,13 @@
     width: 74px;
   }
 }
-.day-menu__heading {
+.b-day-menu__heading {
   // width: 80%;
   float: right;
   padding-top:5px;
   margin-bottom: 14px;
 }
-.day-menu__item {
+.b-day-menu__item {
   overflow: hidden;
   @extend .bg-mask;
   @extend %box--xsmall;
@@ -54,10 +54,10 @@
     }
   }
 }
-.day-menu__item-image {
+.b-day-menu__item-image {
   width: 100%;
 }
-.day-menu__item-ico {
+.b-day-menu__item-ico {
   position: absolute;
   width: 35%;
   top:50%;

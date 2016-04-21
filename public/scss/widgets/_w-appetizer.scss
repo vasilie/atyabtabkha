@@ -1,10 +1,11 @@
-.appetizer__container {
+.w-appetizer__container {
   width: 100%;
+
 }
-.appetizer__heading {
+.w-appetizer__heading {
   padding: 39px 0 12px;
 }
-.appetizer {
+.w-appetizer {
   width: 31.66%;
   margin: 1.255%;
   float: right;
@@ -19,13 +20,13 @@
     display: none;
   }
 }
-.appetizer:nth-child(2){
+.w-appetizer:nth-child(2){
   margin-right: 0;
 }
-.appetizer:nth-child(4){
+.w-appetizer:nth-child(4){
   margin-left: 0;
 }
-.appetizer--big {
+.w-appetizer--big {
   width: 100%;
   margin:0;
   h3 {
@@ -38,6 +39,9 @@
     display:block;
   }
 }
-.appetizer__item {
+.w-appetizer__item {
   width: 100%;
+}
+.sleekslider__arrow--left {
+  top:62%;
 }

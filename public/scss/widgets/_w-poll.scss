@@ -1,20 +1,20 @@
-.poll {
+.w-poll {
   width: 100%;
   margin-top: 46px;
   border:1px solid #ccc;
 }
-.poll__item {
+.w-poll__item {
   width: 100%;
 }
-.poll__content {
+.w-poll__content {
   padding-right: cp(24px, 306px);
 }
-.poll__heading {
+.w-poll__heading {
   font-size: calc-rem(24px);
   margin-top: 19px;
   margin-bottom: 40px;
 }
-.poll__list__item {
+.w-poll__list__item {
   font-size: calc-rem(17px);
   margin-bottom: 18px;
   input {
@@ -25,7 +25,7 @@
     margin: 0 0 0 37px;
   }
 }
-.poll__button-container {
+.w-poll__button-container {
   width: 100%;
   margin-top: 60px;
   margin-bottom: 25px;

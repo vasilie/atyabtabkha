@@ -5,24 +5,23 @@
 @import "base/headings";
 
 @import 'utilities/helpers';
-@import "utilities/box";
 @import "utilities/sleekslider";
 
-// @import "layout/main-layout";
-@import "layout/main-layoutt";
+@import "core/box";
+
+@import "layout/main-layout";
+@import "layout/header";
+@import "layout/footer";
+
+@import "ads/skinning";
+@import "ads/mpu";
+@import "ads/leaderboard";
 
 @import "blocks/b-buttons";
-@import "blocks/header";
-@import "blocks/navigation";
-@import "blocks/footer";
-@import "blocks/b-slider";
 @import "blocks/b-day-menu";
 @import "blocks/b-featured-video";
-@import "blocks/b-adds";
 @import "blocks/b-featured-content";
 @import "blocks/b-chef-of-the-month";
-@import "blocks/b-mpu";
-@import "blocks/b-banner";
 @import "blocks/b-trending-topic";
 @import "blocks/b-article";
 @import "blocks/b-step-by-step-recipe";
@@ -33,12 +32,15 @@
 @import "blocks/b-related-articles";
 @import "blocks/b-comments";
 @import "blocks/b-sidebar-trending-content";
-@import "blocks/b-rating-stars";
-@import "blocks/b-poll";
-@import "blocks/b-appetizer";
+@import "blocks/b-rating";
 @import "blocks/b-recipe-list";
-@import "blocks/b-pagination";
 @import "blocks/b-appetizer-info";
+
+@import "widgets/w-pagination";
+@import "widgets/w-nav";
+@import "widgets/w-poll";
+@import "widgets/w-slider";
+@import "widgets/w-appetizer";
 
 
 @import "pages/category-page";

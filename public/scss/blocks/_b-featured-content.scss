@@ -1,4 +1,4 @@
-.featured-content {
+.b-featured-content {
   @extend %box--middle;
   border:1px solid #ccc;
   @include breakpoint(mobile) {
@@ -6,10 +6,10 @@
     margin-bottom: 32px;
   }
 }
-.featured-content__image {
+.b-featured-content__image {
   width: 100%;
 }
-.featured-content__button {
+.b-featured-content__button {
   @extend .button--slim;
   width: 141px;
   margin: 0 auto;
@@ -18,7 +18,7 @@
   z-index: 10;
   position: relative;
 }
-.featured-content__text {
+.b-featured-content__text {
   text-align: center;
   font-size: calc-rem(24px);
   padding: cp(20px,310px) cp(20px,310px) cp(35px,310px);

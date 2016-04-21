@@ -1,4 +1,4 @@
-.add__container {
+.skinning__container {
   width: 100%;
   width: 1000px;
   margin: 0 auto;
@@ -14,14 +14,14 @@
     display: none;
   }
 }
-.add {
-  // background-image: url("../../assets/img/add-pattern.png");
+.skinning {
+  // background-image: url("../../assets/img/skinning-pattern.png");
 }
-.add__top {
+.skinning__top {
   height: 215px;
-  @extend .add;
+  @extend .skinning;
 }
-.add__left {
+.skinning__left {
   position: fixed;
   z-index: 999;
   height: 1100px;
@@ -29,9 +29,9 @@
   left: 50%;
   margin-left: -719px;
   top: 0;
-  @extend .add;
+  @extend .skinning;
 }
-.add__right {
+.skinning__right {
   position: fixed;
   z-index: 998;
   height: 1100px;
@@ -39,5 +39,5 @@
   right:  50%;
   margin-right:-719px;
   top: 0;
-  @extend .add;
+  @extend .skinning;
 }

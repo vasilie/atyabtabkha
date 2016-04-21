@@ -1,4 +1,4 @@
-.pagination {
+.w-pagination {
   width: 100%;
   text-align: center;
   overflow: hidden;
@@ -9,14 +9,14 @@
     display: none;
   }
 }
-.pagination--mobile {
-  @extend .pagination;
+.w-pagination--mobile {
+  @extend .w-pagination;
   display: none;
   @include breakpoint(mobile) {
     display: block;
   }
 }
-.pagination__item {
+.w-pagination__item {
   display: inline-block;
   height: 32px;
   width: 32px;
@@ -32,13 +32,13 @@
     color: white;
   }
 }
-.pagination__item--next {
+.w-pagination__item--next {
   background-image:url("../../assets/img/next.png");
   background-repeat:no-repeat;
   background-position:center;
   // background-size:contain;
 }
-.pagination__item--last {
+.w-pagination__item--last {
   background-image:url("../../assets/img/last.png");
   background-repeat:no-repeat;
   background-position:center;

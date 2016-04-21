@@ -1,4 +1,4 @@
-.chef-of-the-month {
+.b-chef-of-the-month {
   @extend %box--middle;
   border:1px solid #ccc;
   text-align: center;
@@ -10,26 +10,26 @@
     margin:0;
   }
 }
-.chef-of-the-month__heading {
+.b-chef-of-the-month__heading {
   padding: cp(18px, 310px) 0;
   height: cp(57px, 310px);
   margin-bottom: cp(13px, 633px);
 }
-.chef-of-the-month__logo {
+.b-chef-of-the-month__logo {
   width: 15%;
 }
-.chef-of-the-month__image-wrap {
+.b-chef-of-the-month__image-wrap {
   border-radius: 50%;
   margin-top: cp(7px, 310px);
 }
-.chef-of-the-month__image {
+.b-chef-of-the-month__image {
   width: 28%;
 }
-.chef-of-the-month__name {
+.b-chef-of-the-month__name {
   margin-top: cp(12px, 310px);
   height: cp(12px, 310px);
 }
-.chef-of-the-month__bottom-text {
+.b-chef-of-the-month__bottom-text {
   background: #F9F8F4;
   margin-top: cp(24px, 310px);
   line-height: 40px;
@@ -41,10 +41,10 @@
   bottom: 0;
   color:#f03d65;
 }
-.chef-of-the-month__bottom-left {
+.b-chef-of-the-month__bottom-left {
   float: left;
 }
-.chef-of-the-month__bottom-right {
+.b-chef-of-the-month__bottom-right {
   float: right;
 }
 .number {

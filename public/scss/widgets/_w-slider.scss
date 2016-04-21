@@ -1,4 +1,4 @@
-.slider {
+.w-slider {
   width: 100%;
   overflow: hidden;
   padding: 34px 0px 22px;
@@ -6,9 +6,10 @@
   @include breakpoint(mobile) {
     height: 54vw;
     margin: 34px 0px 22px;
+    padding-top:0;
   }
 }
-.slider__box {
+.w-slider__box {
   @extend .bg-mask;
   @extend %box--xsmall;
   width: cp(181px, 960px);
@@ -36,25 +37,29 @@
     }
   }
 }
-.slider__box-image {
+.w-slider__box-image {
   width: 100%;
   display: block;
   @include breakpoint(mobile) {
     display: none;
   }
 }
-.slider__box-image--mobile {
+.w-slider__box-image--mobile {
   width: 100%;
   display: none;
   @include breakpoint(mobile) {
     display: block;
   }
 }
-.slider__box-play-icon {
+.w-slider__box-play-icon {
   position: absolute;
   top: 5%;
   left: 4%;
   width: 22%;
+  @include breakpoint(mobile) {
+    left: 7%;
+    width: 13%;
+  }
 }
 .overlay {
   position: absolute;

@@ -8,6 +8,7 @@
       top:0;
       padding-bottom:0 !important;
       position:relative;
+      overflow: hidden;
     }
   }
   .slide {
@@ -37,15 +38,19 @@
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    background:black;
     z-index: 100;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .sleekslider__arrow--left {
     @extend .sleekslider__arrow;
     left:0;
+    background-image: url("../../assets/img/left.png");
   }
   .sleekslider__arrow--right {
     @extend .sleekslider__arrow;
+    background-image: url("../../assets/img/right.png");
     right:0;
   }
 }

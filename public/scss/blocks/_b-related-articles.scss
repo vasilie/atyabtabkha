@@ -1,9 +1,9 @@
-.related-articles {
+.b-related-articles {
   width: 100%;
   overflow: hidden;
   margin-bottom: 69px;
 }
-.related-articles__item {
+.b-related-articles__item {
   @extend %box--small;
   @extend .bg-mask;
   overflow: hidden;
@@ -21,13 +21,13 @@
     }
   }
 }
-.related-articles .related-articles__item:nth-child(odd){
+.b-related-articles .b-related-articles__item:nth-child(odd){
   @include breakpoint(mobile) {
     margin-right: 0;
     float: right;
   }
 }
-.related-articles .related-articles__item:nth-child(even){
+.b-related-articles .b-related-articles__item:nth-child(even){
   @include breakpoint(mobile) {
     margin-left: 0;
     float: left;

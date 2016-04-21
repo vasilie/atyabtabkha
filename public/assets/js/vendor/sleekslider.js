@@ -87,7 +87,7 @@ function animateSlider() {
 
 $nextButn.click(function(event) {
 	event.preventDefault();
-	
+
 	if ($(".sleekslider > .slide").is(":animated")) {
 		return false;
 	} else {
@@ -155,7 +155,7 @@ $('nav.tabs li').click(function () {
 		if (clicked === 0) {
 			prevClicked = true;
 		}
-		
+
 		next = clicked + 1;
 		active = clicked;
 		animateSlider();

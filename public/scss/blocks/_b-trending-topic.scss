@@ -1,9 +1,9 @@
-.trending-topic  {
+.b-trending-topic  {
   width: 100%;
   overflow: hidden;
   margin-bottom: 16px;
 }
-.trending-topic__item {
+.b-trending-topic__item {
   @extend %box--small;
   @extend .bg-mask;
   overflow: hidden;
@@ -18,18 +18,18 @@
     margin-bottom: 15px;
   }
 }
-.trending-topic__heading {
+.b-trending-topic__heading {
   margin-bottom: 9px;
   @include breakpoint(mobile) {
     margin-top: 30px;
   }
 }
-.trending-topic__image {
+.b-trending-topic__image {
   @include breakpoint(mobile) {
     display: none !important;
   }
 }
-.trending-topic__image--mobile {
+.b-trending-topic__image--mobile {
   display: none !important;
   @include breakpoint(mobile) {
     display: block !important;

@@ -1,10 +1,10 @@
-.social {
+.b-social {
   float: left;
 }
-.social__item {
+.b-social__item {
   border:1px solid #ccc;
 }
-.social__item__image {
+.b-social__item__image {
   width: 33px;
   height: 33px;
   float: left;
@@ -24,13 +24,13 @@
   background-image: url("../../assets/img/whatsup-ico.png");
   background-size: 25px;
 }
-.social__item__info {
+.b-social__item__info {
   float: left;
   height: 33px;
   padding: 12px;
   border-right: 1px solid #ccc;
 }
-.social__item {
+.b-social__item {
   display: inline-block;
   margin-right: 9px;
 }

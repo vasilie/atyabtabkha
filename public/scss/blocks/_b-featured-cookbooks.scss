@@ -1,4 +1,4 @@
-.featured-cookbooks {
+.b-featured-cookbooks {
   width: 100%;
   float: right;
   text-align: center;
@@ -10,7 +10,7 @@
     overflow: hidden;
   }
 }
-.featured-cookbooks__item {
+.b-featured-cookbooks__item {
   display: inline-block;
   margin:cp(23px, 960px);
   width: cp(179px, 960px);
@@ -21,7 +21,7 @@
     margin: -8px 9px 22px;
   }
 }
-.featured-cookbooks__list {
+.b-featured-cookbooks__list {
   padding-top: 13px;
   margin-top: 22px;
   padding-bottom: 19px;
@@ -32,17 +32,17 @@
     left: 65%;
   }
 }
-.featured-cookbooks__heading {
+.b-featured-cookbooks__heading {
   text-align: right;
   @include breakpoint(mobile) {
     text-align: center;
   }
 }
-.featured-cookbooks__name {
+.b-featured-cookbooks__name {
   color:#F03D65;
   margin: 20px 0 18px;
   font-size: calc-rem(16px);
 }
-.featured-cookbooks__info {
+.b-featured-cookbooks__info {
   font-size: calc-rem(18px);
 }
