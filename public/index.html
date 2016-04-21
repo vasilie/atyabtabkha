@@ -103,8 +103,9 @@
 <div class="wrapper">
 <div class="page-wrapper--no-padding-mobile">
 <!-- #Slider -->
-    <div class="slider">
-      <div class="slider__box first">
+  <div class="sleekslider-container">
+    <div class="slider sleekslider">
+      <div class="slider__box first slide active bg-1">
         <img class='slider__box-image' src="assets/img/content/7.png" alt="">
         <img class='slider__box-image--mobile' src="assets/img/content/slider-mobile.png" alt="">
 
@@ -112,7 +113,7 @@
           اسمينة عليها واكتشفي عا
         </h3>
       </div>
-      <div class="slider__box">
+      <div class="slider__box slide bg-2">
         <img class='slider__box-image'src="assets/img/content/1.png" alt="">
         <img class='slider__box-image--mobile'src="assets/img/content/slider-mobile.png" alt="">
 
@@ -121,7 +122,7 @@
         </h3>
         <img src='assets/img/play-icon-small.png'class="slider__box-play-icon">
       </div>
-      <div class="slider__box">
+      <div class="slider__box slide bg-3">
         <img  class='slider__box-image'src="assets/img/content/2.png" alt="">
         <img  class='slider__box-image--mobile'src="assets/img/content/slider-mobile.png" alt="">
 
@@ -129,7 +130,7 @@
           اسمينة عليها واكتشفي عا
         </h3>
       </div>
-      <div class="slider__box">
+      <div class="slider__box slide bg-4">
         <img class='slider__box-image' src="assets/img/content/3.png" alt="">
         <img class='slider__box-image--mobile' src="assets/img/content/slider-mobile.png" alt="">
 
@@ -137,7 +138,7 @@
           اسمينة عليها واكتشفي عا
         </h3>
       </div>
-      <div class="slider__box">
+      <div class="slider__box slide bg-5">
         <img  class='slider__box-image'src="assets/img/content/4.png" alt="">
         <img  class='slider__box-image--mobile'src="assets/img/content/slider-mobile.png" alt="">
 
@@ -147,6 +148,12 @@
         <img src='assets/img/play-icon-small.png'class="slider__box-play-icon">
       </div>
     </div>
+    <div class="arrow-container">
+      <div class="sleekslider__arrow--left" onclick='slide("left")'></div>
+      <div class="sleekslider__arrow--right" onclick='slide("right")'></div>
+    </div>
+  </div>
+
 <!-- #Slider End-->
   </div>
   <div class="page-wrapper">
@@ -445,6 +452,7 @@
   </div>
 <!-- #Footer End -->
 <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="assets/js/main.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/vendor/sleekslider.min.js"></script>
 </body>
 </html>

@@ -111,35 +111,44 @@
   <div class="wrapper">
     <div class="page-wrapper">
       <div class="division--8">
-        <div class="appetizer__container">
-          <h2 class="appetizer__heading">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </h2>
-          <div class="appetizer appetizer--big">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero.</h3>
-            <img class="appetizer__item" src='assets/img/content/7.png'>
-            <img class="appetizer__icon">
-            <img src="" alt="" class="appetizer__icon__like">
+        <div class="sleekslider-container">
+          <div class="appetizer__container">
+            <h2 class="appetizer__heading">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h2>
+            <div class="sleekslider">
+              <div class="appetizer  appetizer--big slide">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero.</h3>
+                <img class="appetizer__item" src='assets/img/content/7.png'>
+                <img class="appetizer__icon">
+                <img src="" alt="" class="appetizer__icon__like">
+              </div>
+              <div class=" appetizer slide">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero.</h3>
+                <img class="appetizer__item" src='assets/img/content/7.png'>
+                <img class="appetizer__icon">
+                <img src="" alt="" class="appetizer__icon__like">
+              </div>
+              <div class=" appetizer slide">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero.</h3>
+                <img class="appetizer__item" src='assets/img/content/7.png'>
+                <img class="appetizer__icon">
+                <img src="" alt="" class="appetizer__icon__like">
+              </div>
+              <div class=" appetizer slide">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero.</h3>
+                <img class="appetizer__item" src='assets/img/content/7.png'>
+                <img class="appetizer__icon">
+                <img src="" alt="" class="appetizer__icon__like">
+              </div>
+            </div>
           </div>
-          <div class="appetizer">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero.</h3>
-            <img class="appetizer__item" src='assets/img/content/7.png'>
-            <img class="appetizer__icon">
-            <img src="" alt="" class="appetizer__icon__like">
-          </div>
-          <div class="appetizer">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero.</h3>
-            <img class="appetizer__item" src='assets/img/content/7.png'>
-            <img class="appetizer__icon">
-            <img src="" alt="" class="appetizer__icon__like">
-          </div>
-          <div class="appetizer">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero.</h3>
-            <img class="appetizer__item" src='assets/img/content/7.png'>
-            <img class="appetizer__icon">
-            <img src="" alt="" class="appetizer__icon__like">
+          <div class="arrow-container">
+            <div class="sleekslider__arrow--left" onclick='slide("left")'></div>
+            <div class="sleekslider__arrow--right" onclick='slide("right")'></div>
           </div>
         </div>
+
         <ul class="recipe-list">
           <li class="recipe-list__item">
             <div class="recipe-list__item__media">
@@ -375,8 +384,8 @@
         <li class="pagination__item">6</li>
         <li class="pagination__item">7</li>
         <li class="pagination__item">8</li>
-        <li class="pagination__item">9</li>
-        <li class="pagination__item">10</li>
+        <li class="pagination__item pagination__item--next"></li>
+        <li class="pagination__item pagination__item--last"></li>
       </ul>
       <div class="division--4">
         <div class="mpu__container first">
@@ -434,8 +443,8 @@
         <li class="pagination__item">6</li>
         <li class="pagination__item">7</li>
         <li class="pagination__item">8</li>
-        <li class="pagination__item">9</li>
-        <li class="pagination__item">10</li>
+        <li class="pagination__item pagination__item--next"></li>
+        <li class="pagination__item pagination__item--last"></li>
       </ul>
     </div>
     <div class="banner__container">
@@ -520,6 +529,6 @@
   </div>
 <!-- #Footer End -->
 <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="assets/js/main.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

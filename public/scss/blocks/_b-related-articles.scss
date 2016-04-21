@@ -13,6 +13,11 @@
     margin-bottom: 28px;
     h3 {
       position: relative;
+      color:#333;
+      text-shadow:none;
+    }
+    &:after {
+      display:none;
     }
   }
 }

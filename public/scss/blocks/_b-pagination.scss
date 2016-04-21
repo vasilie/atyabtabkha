@@ -26,8 +26,21 @@
   border: 1px solid #ccc;
   color: #333;
   margin-bottom: 5px;
+  vertical-align: bottom;
   &.active {
     background: #F03D65;
     color: white;
   }
+}
+.pagination__item--next {
+  background-image:url("../../assets/img/next.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  // background-size:contain;
+}
+.pagination__item--last {
+  background-image:url("../../assets/img/last.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  // background-size:contain;
 }
