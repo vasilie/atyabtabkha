@@ -27,7 +27,7 @@ body, html {
 .page-wrapper--no-padding-mobile {
   @extend .page-wrapper;
   @include breakpoint(mobile) {
-    padding:0;
+    padding: 0 !important;
   }
 }
 .page-wrapper--transparent {
