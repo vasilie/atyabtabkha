@@ -13,6 +13,7 @@
     position: absolute;
     bottom: 30px;
     padding: 0 25px;
+    display: none;
   }
   @include breakpoint(mobile) {
     display: none;
@@ -27,6 +28,9 @@
 .appetizer--big {
   width: 100%;
   margin:0;
+  h3 {
+    display: block;
+  }
   @include breakpoint(mobile) {
     display: block;
   }

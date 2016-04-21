@@ -1365,7 +1365,8 @@ body, html {
   .appetizer h3 {
     position: absolute;
     bottom: 30px;
-    padding: 0 25px; }
+    padding: 0 25px;
+    display: none; }
   @media (max-width: 480px) {
     .appetizer {
       display: none; } }
@@ -1379,6 +1380,8 @@ body, html {
 .appetizer--big {
   width: 100%;
   margin: 0; }
+  .appetizer--big h3 {
+    display: block; }
   @media (max-width: 480px) {
     .appetizer--big {
       display: block; } }
