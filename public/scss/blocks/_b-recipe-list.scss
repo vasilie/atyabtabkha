@@ -5,6 +5,11 @@
     bottom: 0px;
   }
 }
+.b-recipe-list--padding-mobile {
+  @include breakpoint(mobile) {
+    padding:0 11px;
+  }
+}
 .b-recipe-list__item {
   width: 100%;
   overflow: hidden;

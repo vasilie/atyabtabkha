@@ -1347,6 +1347,10 @@ body, html {
   .b-recipe-list .b-rating {
     bottom: 0px; }
 
+@media (max-width: 480px) {
+  .b-recipe-list--padding-mobile {
+    padding: 0 11px; } }
+
 .b-recipe-list__item {
   width: 100%;
   overflow: hidden;
