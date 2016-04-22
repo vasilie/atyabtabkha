@@ -103,7 +103,7 @@
       float: none;
       margin-bottom: 20px;
     }
-  }    
+  }
 }
 .article__button {
   @extend .button;
@@ -115,4 +115,9 @@
     margin-top: 7px;
     margin-left: 14px;
   }
+}
+.article__button__ico {
+  height: 37px;
+  width: 18px;
+  float: right;
 }

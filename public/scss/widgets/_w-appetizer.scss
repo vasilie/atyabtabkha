@@ -42,6 +42,23 @@
 .w-appetizer__item {
   width: 100%;
 }
+.w-appetizer__item_heading--small {
+  width: 100%;
+  position: absolute;
+  bottom:50px;
+}
 .sleekslider__arrow--left {
   top:62%;
+}
+.w-appetizer__icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left:20px;
+  top:20px;
+}
+.w-appetizer__icon--right {
+  @extend .w-appetizer__icon;
+  left:auto;
+  right: 20px;
 }

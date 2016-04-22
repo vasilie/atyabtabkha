@@ -1,0 +1,53 @@
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon--play {
+  @extend .icon;
+  background-image: url("../../assets/img/play-icon-small.png");
+}
+.icon--maindish {
+  @extend .icon;
+  background-image: url("../../assets/img/maindish.png");
+}
+.icon--dessert {
+  @extend .icon;
+  background-image: url("../../assets/img/dessert.png");
+}
+.icon--appetizer {
+  @extend .icon;
+  background-image: url("../../assets/img/appetizer.png");
+}
+.icon--list {
+  @extend .icon;
+  background-image: url("../../assets/img/list-icon-large.png");
+}
+.icon--chat {
+  @extend .icon;
+  background-image: url("../../assets/img/edit-recipe.png");
+}
+.icon--f-instagram {
+  @extend .icon;
+  background-image: url("../../assets/img/instaico.png");
+}
+.icon--f-pinterest {
+  @extend .icon;
+  background-image: url("../../assets/img/pinterestico.png");
+}
+.icon--f-gplus {
+  @extend .icon;
+  background-image: url("../../assets/img/gplus.png");
+}
+.icon--f-twitter {
+  @extend .icon;
+  background-image: url("../../assets/img/twittico.png");
+}
+.icon--f-youtube {
+  @extend .icon;
+  background-image: url("../../assets/img/ytico.png");
+}
+.icon--f-facebook {
+  @extend .icon;
+  background-image: url("../../assets/img/fbico.png");
+}

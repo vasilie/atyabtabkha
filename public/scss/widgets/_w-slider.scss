@@ -51,11 +51,12 @@
     display: block;
   }
 }
-.w-slider__box-play-icon {
+.w-slider__box-icon {
   position: absolute;
   top: 5%;
   left: 4%;
-  width: 22%;
+  width: 30px;
+  height: 30px;
   @include breakpoint(mobile) {
     left: 7%;
     width: 13%;
