@@ -9,18 +9,18 @@
   @include breakpoint(mobile) {
     padding: 23px 8px;
   }
-  .social {
+  .b-social {
     float: right;
     margin-top: 29px;
   }
-  .social__item {
+  .b-social__item {
     margin-right: 4px;
   }
-  .social__item__image {
+  .b-social__item__image {
     width: 30px;
     height: 30px;
   }
-  .social__item__info {
+  .b-social__item__info {
     height: 30px;
     padding: 9px 12px;
   }

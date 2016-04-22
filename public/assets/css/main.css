@@ -1372,15 +1372,15 @@ body, html {
   @media (max-width: 480px) {
     .b-appetizer-info {
       padding: 23px 8px; } }
-  .b-appetizer-info .social {
+  .b-appetizer-info .b-social {
     float: right;
     margin-top: 29px; }
-  .b-appetizer-info .social__item {
+  .b-appetizer-info .b-social__item {
     margin-right: 4px; }
-  .b-appetizer-info .social__item__image {
+  .b-appetizer-info .b-social__item__image {
     width: 30px;
     height: 30px; }
-  .b-appetizer-info .social__item__info {
+  .b-appetizer-info .b-social__item__info {
     height: 30px;
     padding: 9px 12px; }
 
