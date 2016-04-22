@@ -11,3 +11,22 @@
 .last {
   margin-left: 0 !important;
 }
+.divider-container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  line-height: 31px;
+  .divider {
+    border-top:1px solid gray;
+    position: absolute;
+    top:50%;
+    width: 100%;
+  }
+  .divider__text {
+    background: white;
+    padding:5px;
+    z-index: 99;
+    position: relative;
+    display: inline-block;
+  }
+}

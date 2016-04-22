@@ -1,0 +1,26 @@
+.b-latest-cookbook {
+  @extend .b-sidebar-topic;
+}
+.b-latest-cookbook__heading {
+  @extend .b-sidebar-topic__heading;
+}
+.b-latest-cookbook__item {
+  @extend .b-sidebar-topic__item;
+  text-align: center;
+}
+.b-latest-cookbook__image {
+  @extend .b-sidebar-topic__image;
+}
+.b-latest-cookbook__content {
+  @extend .b-sidebar-topic__content;
+}
+.b-latest-cookbook__text {
+  @extend .b-sidebar-topic__text;
+  color:#F03D65;
+}
+.b-latest-cookbook__button {
+  @extend .b-sidebar-topic__button;
+}
+.b-latest-cookbook__author {
+  margin-top: -42px;
+}

@@ -104,6 +104,23 @@ h3 {
 .last {
   margin-left: 0 !important; }
 
+.divider-container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  line-height: 31px; }
+  .divider-container .divider {
+    border-top: 1px solid gray;
+    position: absolute;
+    top: 50%;
+    width: 100%; }
+  .divider-container .divider__text {
+    background: white;
+    padding: 5px;
+    z-index: 99;
+    position: relative;
+    display: inline-block; }
+
 .sleekslider-container {
   width: 100%;
   position: relative; }
@@ -1071,35 +1088,35 @@ body, html {
 .b-featured-cookbooks__info {
   font-size: 1.2rem; }
 
-.b-sidebar-topic {
+.b-sidebar-topic, .b-latest-cookbook {
   width: 100%;
   padding-top: 10px;
   border: 1px solid #ccc;
   margin-bottom: 36px; }
 
-.b-sidebar-topic__heading {
+.b-sidebar-topic__heading, .b-latest-cookbook__heading {
   text-align: center;
   width: 100%;
   font-size: 1.6rem;
   padding: 13px 0; }
 
-.b-sidebar-topic__item {
+.b-sidebar-topic__item, .b-latest-cookbook__item {
   width: 100%; }
 
-.b-sidebar-topic__content {
+.b-sidebar-topic__content, .b-latest-cookbook__content {
   width: 100%;
   text-align: center; }
 
-.b-sidebar-topic__text {
+.b-sidebar-topic__text, .b-latest-cookbook__text {
   font-size: 0.93333rem;
   padding-top: 11px;
   line-height: 24px;
   color: #999999; }
 
-.b-sidebar-topic__image {
+.b-sidebar-topic__image, .b-latest-cookbook__image {
   width: 100%; }
 
-.b-sidebar-topic__button {
+.b-sidebar-topic__button, .b-latest-cookbook__button {
   background: #F9F8F4;
   font-size: 0.86667rem;
   text-align: center;
@@ -1334,6 +1351,15 @@ body, html {
   @media (max-width: 480px) {
     .b-recipe-list__item__image {
       width: 178%; } }
+
+.b-latest-cookbook__item {
+  text-align: center; }
+
+.b-latest-cookbook__text {
+  color: #F03D65; }
+
+.b-latest-cookbook__author {
+  margin-top: -42px; }
 
 .b-appetizer-info {
   width: 100%;
