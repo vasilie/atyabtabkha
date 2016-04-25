@@ -13,12 +13,14 @@ var slider_position = 0;
 function slide(direction, speed){
   var slidesLength = $(".sleekslider .slide").length,
       $slider = $(".sleekslider");
+
   if (direction == 'left' && slider_position <= slidesLength -2){
     slider_position++;
+    $slider.animate({left:slider_position*100+'vw'},speed);
   } else if (direction=='right' && slider_position >= 1 ){
     slider_position--;
+    $slider.animate({left:slider_position*100+'vw'},speed);
   }
-  $slider.animate({left:slider_position*100+'vw'},speed);
 }
 function appetizerSlider(){
   var $slides = $(".w-appetizer__media"),
@@ -47,12 +49,12 @@ function appetizerSlider(){
   }
 }
 function cookbooksSlider(){
-  var $cookbooks = $('.b-featured-cookbooks'),
-      $cookbooks_list = $('.b-featured-cookbooks__list'),
-      $cookbooks_list_item = $('.b-featured-cookbooks__item'),
+  var $cookbooks = $('.w-featured-cookbooks'),
+      $cookbooks_list = $('.w-featured-cookbooks__list'),
+      $cookbooks_list_item = $('.w-featured-cookbooks__item'),
       slider_position = 1;
   $cookbooks.swipe({
-    allowPageScroll:"vertical",
+    // allowPageScroll:"vertical",
     swipe:function(event, direction, distance, duration, fingerCount){
       if (direction == "left" && slider_position >0) {
         slider_position--;
