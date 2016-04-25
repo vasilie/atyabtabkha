@@ -1,6 +1,7 @@
 .w-appetizer__container {
   width: 100%;
   overflow: hidden;
+
   margin-bottom: 20px;
   @include breakpoint(mobile) {
     margin-bottom: 20px;
@@ -63,6 +64,7 @@
 }
 .w-appetizer__media {
   width: 100%;
+  @extend .bg-mask;
   overflow: hidden;
   margin:0;
   top:0;

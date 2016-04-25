@@ -50,7 +50,6 @@ function cookbooksSlider(){
   var $cookbooks = $('.b-featured-cookbooks'),
       $cookbooks_list = $('.b-featured-cookbooks__list'),
       $cookbooks_list_item = $('.b-featured-cookbooks__item'),
-
       slider_position = 1;
   $cookbooks.swipe({
     allowPageScroll:"vertical",

@@ -91,11 +91,12 @@ h3 {
     h3 {
       font-size: 17px; } }
 
-.bg-mask::after, .b-day-menu__item::after, .b-featured-video::after, .b-trending-topic__item::after, .b-step-by-step-recipe::after, .b-related-articles__item::after, .w-slider__box::after {
+.bg-mask::after, .b-day-menu__item::after, .b-featured-video::after, .b-trending-topic__item::after, .b-step-by-step-recipe::after, .b-related-articles__item::after, .w-slider__box::after, .w-appetizer__media::after {
   content: url(../../assets/img/overlay-large.png);
   width: 100%;
   position: absolute;
   bottom: -3px;
+  left: 0;
   z-index: 2; }
 
 .first {
@@ -1097,51 +1098,51 @@ body, html {
       padding: 0;
       border: none; } }
 
-.b-featured-cookbooks {
+.w-featured-cookbooks {
   width: 100%;
   float: right;
   text-align: center;
   padding: 40px 0px 6px; }
   @media (max-width: 480px) {
-    .b-featured-cookbooks {
+    .w-featured-cookbooks {
       background: #F7F5E6;
       margin-top: 35px;
       padding: 33px 0 0;
       overflow: hidden; } }
 
-.b-featured-cookbooks__item {
+.w-featured-cookbooks__item {
   display: inline-block;
   margin: 2.39583%;
   width: 18.64583%; }
-  .b-featured-cookbooks__item img {
+  .w-featured-cookbooks__item img {
     width: 100%; }
   @media (max-width: 480px) {
-    .b-featured-cookbooks__item {
+    .w-featured-cookbooks__item {
       margin: -8px 9px 22px; } }
 
-.b-featured-cookbooks__list {
+.w-featured-cookbooks__list {
   padding-top: 13px;
   margin-top: 22px;
   padding-bottom: 19px;
   background: #F7F5E6; }
   @media (max-width: 480px) {
-    .b-featured-cookbooks__list {
+    .w-featured-cookbooks__list {
       width: 297%;
       position: relative;
       left: 68%; } }
 
-.b-featured-cookbooks__heading {
+.w-featured-cookbooks__heading {
   text-align: right; }
   @media (max-width: 480px) {
-    .b-featured-cookbooks__heading {
+    .w-featured-cookbooks__heading {
       text-align: center; } }
 
-.b-featured-cookbooks__name {
+.w-featured-cookbooks__name {
   color: #F03D65;
   margin: 20px 0 18px;
   font-size: 1.06667rem; }
 
-.b-featured-cookbooks__info {
+.w-featured-cookbooks__info {
   font-size: 1.2rem; }
 
 .b-sidebar-topic, .b-latest-cookbook {
