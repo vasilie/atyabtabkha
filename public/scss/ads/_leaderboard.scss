@@ -12,3 +12,10 @@
     display: none;
   }
 }
+.leaderboard__container--mobile {
+  @extend .leaderboard__container;
+  display: none;
+  @include breakpoint(mobile) {
+    display: block;
+  }
+}

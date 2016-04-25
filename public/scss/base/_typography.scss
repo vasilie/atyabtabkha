@@ -10,7 +10,7 @@ html {
   font-family: $text__family--droidKufi;
 	font-size: $base__font-size;
   font-weight:300;
-  color: #333;
+  color: #4a4a4a;
   @include breakpoint(mediumTypo) {
     font-size: 12px;
   }
