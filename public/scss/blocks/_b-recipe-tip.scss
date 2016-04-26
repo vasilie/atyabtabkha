@@ -1,0 +1,22 @@
+.b-recipe-tip__button {
+  float: right;
+  color: white;
+  background: #4A4A4A;
+  padding: 8px 39px;
+}
+.b-recipe-tip {
+  width: 100%;
+  float: right;
+  background: #F7F5E6;
+}
+.b-recipe-tip__item {
+  padding:13px 8px 13px 23px;
+  float: right;
+  img {
+    width:111px;
+  }
+}
+.b-recipe-tip__content {
+  padding: 20px 0;
+  line-height: 24px;
+}

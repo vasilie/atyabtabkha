@@ -3,7 +3,7 @@
 @import "base/typography";
 @import "base/functions";
 @import "base/headings";
-@import "base/mixin";
+@import "base/mixins";
 
 @import 'utilities/helpers';
 @import "utilities/sleekslider";
@@ -37,6 +37,9 @@
 @import "blocks/b-recipe-list";
 @import "blocks/b-latest-cookbook";
 @import "blocks/b-appetizer-info";
+@import "blocks/b-product-teaser";
+@import "blocks/b-ingredients-list";
+@import "blocks/b-recipe-tip";
 
 @import "widgets/w-featured-cookbooks";
 @import "widgets/w-pagination";
@@ -44,6 +47,7 @@
 @import "widgets/w-poll";
 @import "widgets/w-slider";
 @import "widgets/w-appetizer";
+@import "widgets/w-recipe";
 
 
 @import "pages/category-page";

@@ -1,0 +1,24 @@
+.b-ingredients__list {
+  ul {
+    width: 100%;
+  }
+  li {
+    padding: 14px 0;
+    border-bottom: 2px dotted #ccc;
+  }
+  li:last-child {
+    border-bottom:none;
+  }
+}
+.sponsored-ingredient {
+  padding-top: 21px;
+  b {
+    font-weight: bold;
+  }
+}
+.sponsored-ingredient__image-wrap {
+  float: right;
+  border: 1px solid #ccc;
+  padding: 20px 0;
+  margin-left: 20px;
+}

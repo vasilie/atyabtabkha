@@ -917,21 +917,21 @@ body, html {
       display: block !important;
       width: 100%; } }
 
-.article {
+.article, .w-recipe {
   width: 100%;
   padding-top: 7px; }
 
-.article__heading {
+.article__heading, .w-recipe__heading {
   padding: 33px 0 20px; }
 
-.article__author {
+.article__author, .w-recipe__author {
   width: 100%;
   float: right;
   margin-bottom: 7px; }
-  .article__author .social {
+  .article__author .social, .w-recipe__author .social {
     margin-top: 23px; }
     @media (max-width: 480px) {
-      .article__author .social {
+      .article__author .social, .w-recipe__author .social {
         width: 100%; } }
 
 .article__author__image-wrapper {
@@ -942,13 +942,13 @@ body, html {
   .article__author__image {
     width: 47px; } }
 
-.article__author__name {
+.article__author__name, .w-recipe__author__name {
   float: right;
   margin-right: 17px;
   padding-top: 30px;
   color: #F03D65; }
   @media (max-width: 480px) {
-    .article__author__name {
+    .article__author__name, .w-recipe__author__name {
       margin-right: 11px;
       padding-top: 18px; } }
 
@@ -1097,53 +1097,6 @@ body, html {
     .b-trending-fb-recipes {
       padding: 0;
       border: none; } }
-
-.w-featured-cookbooks {
-  width: 100%;
-  float: right;
-  text-align: center;
-  padding: 40px 0px 6px; }
-  @media (max-width: 480px) {
-    .w-featured-cookbooks {
-      background: #F7F5E6;
-      margin-top: 35px;
-      padding: 33px 0 0;
-      overflow: hidden; } }
-
-.w-featured-cookbooks__item {
-  display: inline-block;
-  margin: 2.39583%;
-  width: 18.64583%; }
-  .w-featured-cookbooks__item img {
-    width: 100%; }
-  @media (max-width: 480px) {
-    .w-featured-cookbooks__item {
-      margin: -8px 9px 22px; } }
-
-.w-featured-cookbooks__list {
-  padding-top: 13px;
-  margin-top: 22px;
-  padding-bottom: 19px;
-  background: #F7F5E6; }
-  @media (max-width: 480px) {
-    .w-featured-cookbooks__list {
-      width: 297%;
-      position: relative;
-      left: 68%; } }
-
-.w-featured-cookbooks__heading {
-  text-align: right; }
-  @media (max-width: 480px) {
-    .w-featured-cookbooks__heading {
-      text-align: center; } }
-
-.w-featured-cookbooks__name {
-  color: #F03D65;
-  margin: 20px 0 18px;
-  font-size: 1.06667rem; }
-
-.w-featured-cookbooks__info {
-  font-size: 1.2rem; }
 
 .b-sidebar-topic, .b-latest-cookbook {
   width: 100%;
@@ -1458,6 +1411,116 @@ body, html {
   color: #F03D65;
   display: block; }
 
+.b-product-teaser {
+  width: 100%;
+  width: 100%;
+  background: #F7F5E6; }
+
+.b-product-teaser__item {
+  width: 100%; }
+  .b-product-teaser__item img {
+    width: 100%;
+    display: block; }
+
+.b-product-teaser__content {
+  padding: 9% 7%; }
+  .b-product-teaser__content p {
+    font-size: 16px;
+    line-height: 25px; }
+
+.b-product-teaser__heading {
+  font-size: 25px;
+  margin-bottom: 19px; }
+
+.b-ingredients__list ul {
+  width: 100%; }
+
+.b-ingredients__list li {
+  padding: 14px 0;
+  border-bottom: 2px dotted #ccc; }
+
+.b-ingredients__list li:last-child {
+  border-bottom: none; }
+
+.sponsored-ingredient {
+  padding-top: 21px; }
+  .sponsored-ingredient b {
+    font-weight: bold; }
+
+.sponsored-ingredient__image-wrap {
+  float: right;
+  border: 1px solid #ccc;
+  padding: 20px 0;
+  margin-left: 20px; }
+
+.b-recipe-tip__button {
+  float: right;
+  color: white;
+  background: #4A4A4A;
+  padding: 8px 39px; }
+
+.b-recipe-tip {
+  width: 100%;
+  float: right;
+  background: #F7F5E6; }
+
+.b-recipe-tip__item {
+  padding: 13px 8px 13px 23px;
+  float: right; }
+  .b-recipe-tip__item img {
+    width: 111px; }
+
+.b-recipe-tip__content {
+  padding: 20px 0;
+  line-height: 24px; }
+
+.w-featured-cookbooks {
+  width: 100%;
+  float: right;
+  text-align: center;
+  padding: 40px 0px 6px; }
+  @media (max-width: 480px) {
+    .w-featured-cookbooks {
+      background: #F7F5E6;
+      margin-top: 35px;
+      padding: 33px 0 0;
+      overflow: hidden; } }
+
+.w-featured-cookbooks__item {
+  display: inline-block;
+  margin: 2.39583%;
+  width: 18.64583%; }
+  .w-featured-cookbooks__item img {
+    width: 100%; }
+  @media (max-width: 480px) {
+    .w-featured-cookbooks__item {
+      margin: -8px 9px 22px; } }
+
+.w-featured-cookbooks__list {
+  padding-top: 13px;
+  margin-top: 22px;
+  padding-bottom: 19px;
+  background: #F7F5E6; }
+  @media (max-width: 480px) {
+    .w-featured-cookbooks__list {
+      width: 297%;
+      position: relative;
+      left: 68%; } }
+
+.w-featured-cookbooks__heading {
+  text-align: right; }
+  @media (max-width: 480px) {
+    .w-featured-cookbooks__heading {
+      text-align: center; } }
+
+.w-featured-cookbooks__name {
+  color: #F03D65;
+  margin: 20px 0 18px;
+  font-size: 1.06667rem; }
+
+.w-featured-cookbooks__info {
+  font-size: 1.2rem; }
+
 .w-pagination, .w-pagination--mobile {
   width: 100%;
   text-align: center;
@@ -1753,6 +1816,67 @@ body, html {
 .w-appetizer__icon--right {
   left: auto;
   right: 20px; }
+
+.w-recipe {
+  overflow: hidden; }
+  .w-recipe .b-rating {
+    float: left;
+    position: relative;
+    margin-top: 48px;
+    margin-right: 40px; }
+  .w-recipe .b-social {
+    margin-top: 26px; }
+
+.w-recipe__author__image {
+  width: 64px;
+  display: block;
+  border-radius: 50%;
+  float: right; }
+
+.w-recipe__item-container {
+  float: left;
+  overflow: hidden; }
+
+.w-recipe__actions {
+  float: right;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc; }
+
+.w-recipe__actions__button {
+  float: right;
+  line-height: 37px;
+  padding-top: 13px;
+  margin-left: 30px; }
+  .w-recipe__actions__button p {
+    float: right;
+    color: #ccc; }
+  .w-recipe__actions__button img {
+    float: right;
+    margin-left: 12px; }
+
+.w-recipe__ingredients {
+  width: 100%;
+  float: right;
+  overflow: hidden; }
+
+.w-recipe__ingredients--left {
+  width: 47%;
+  margin-right: 3%;
+  float: left; }
+
+.w-recipe__ingredients--right {
+  width: 49%;
+  margin-left: 1%;
+  float: left; }
+
+.w-recipe__info {
+  padding-top: 24px; }
+  .w-recipe__info p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 33px; }
 
 .category-page .mpu__container.first, .category-page .first.mpu__container--mobile, .category-page .first.mpu__container--desk {
   margin-top: 33px; }

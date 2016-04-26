@@ -13,7 +13,7 @@ var slider_position = 0;
 function slide(direction, speed){
   var slidesLength = $(".sleekslider .slide").length,
       $slider = $(".sleekslider");
-
+      $slider.css({"width":slidesLength*100 + '%'});
   if (direction == 'left' && slider_position <= slidesLength -2){
     slider_position++;
     $slider.animate({left:slider_position*100+'vw'},speed);
