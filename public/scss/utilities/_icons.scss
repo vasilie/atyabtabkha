@@ -51,3 +51,11 @@
   @extend .icon;
   background-image: url("../../assets/img/fbico.png");
 }
+.icon--comment {
+  @extend .icon;
+  background-image: url("../../assets/img/comment-ico.png");
+}
+.icon--add-white {
+  @extend .icon;
+  background-image: url("../../assets/img/add-ico.png");
+}

@@ -168,7 +168,7 @@ h3 {
     background-image: url("../../assets/img/right.png");
     right: 0; }
 
-.icon, .icon--play, .icon--maindish, .icon--dessert, .icon--appetizer, .icon--list, .icon--chat, .icon--f-instagram, .icon--f-pinterest, .icon--f-gplus, .icon--f-twitter, .icon--f-youtube, .icon--f-facebook {
+.icon, .icon--play, .icon--maindish, .icon--dessert, .icon--appetizer, .icon--list, .icon--chat, .icon--f-instagram, .icon--f-pinterest, .icon--f-gplus, .icon--f-twitter, .icon--f-youtube, .icon--f-facebook, .icon--comment, .icon--add-white {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain; }
@@ -208,6 +208,12 @@ h3 {
 
 .icon--f-facebook {
   background-image: url("../../assets/img/fbico.png"); }
+
+.icon--comment {
+  background-image: url("../../assets/img/comment-ico.png"); }
+
+.icon--add-white {
+  background-image: url("../../assets/img/add-ico.png"); }
 
 .b-day-menu__item, .b-trending-fb-recipes .item, .w-slider__box, .b-trending-topic__item, .b-related-articles__item, .b-featured-content, .b-chef-of-the-month, .w-slider__box.first, .b-featured-video, .b-step-by-step-recipe {
   display: block;
@@ -688,7 +694,7 @@ body, html {
     .leaderboard__container--mobile {
       display: block; } }
 
-.button, .button--slim, .b-featured-video .ch-button, .b-step-by-step-recipe .ch-button, .b-featured-content__button, .article__button {
+.button, .button--slim, .b-featured-video .ch-button, .b-step-by-step-recipe .ch-button, .b-featured-content__button, .article__button, .w-recipe__button {
   color: white;
   line-height: 40px;
   height: 40px;
@@ -939,7 +945,7 @@ body, html {
   border-radius: 50%; }
 
 @media (max-width: 480px) {
-  .article__author__image {
+  .article__author__image, .w-recipe__author__image {
     width: 47px; } }
 
 .article__author__name, .w-recipe__author__name {
@@ -1302,6 +1308,10 @@ body, html {
   height: 21px; }
   .b-rating__item.active {
     background-image: url(../../assets/img/star.png); }
+  @media (max-width: 480px) {
+    .b-rating__item {
+      width: 16px;
+      height: 16px; } }
 
 .b-recipe-list {
   width: 100%;
@@ -1453,6 +1463,10 @@ body, html {
   padding: 20px 0;
   margin-left: 20px; }
 
+.b-recipe-tip__container {
+  float: right;
+  margin-top: 46px; }
+
 .b-recipe-tip__button {
   float: right;
   color: white;
@@ -1469,10 +1483,28 @@ body, html {
   float: right; }
   .b-recipe-tip__item img {
     width: 111px; }
+  @media (max-width: 480px) {
+    .b-recipe-tip__item {
+      width: 100%;
+      padding: 0; }
+      .b-recipe-tip__item img {
+        width: 100%; } }
 
 .b-recipe-tip__content {
   padding: 20px 0;
   line-height: 24px; }
+  .b-recipe-tip__content p {
+    padding-left: 20px; }
+
+.b-recipe-tip__tags {
+  float: right;
+  padding: 33px 8px; }
+  .b-recipe-tip__tags p {
+    float: right;
+    margin-left: 10px;
+    font-size: 13px;
+    color: #F03D65;
+    line-height: 24px; }
 
 .w-featured-cookbooks {
   width: 100%;
@@ -1627,7 +1659,7 @@ body, html {
   margin-top: 60px;
   margin-bottom: 25px;
   text-align: center; }
-  .w-poll__button-container .button, .w-poll__button-container .button--slim, .w-poll__button-container .b-featured-video .ch-button, .b-featured-video .w-poll__button-container .ch-button, .w-poll__button-container .b-step-by-step-recipe .ch-button, .b-step-by-step-recipe .w-poll__button-container .ch-button, .w-poll__button-container .b-featured-content__button, .w-poll__button-container .article__button {
+  .w-poll__button-container .button, .w-poll__button-container .button--slim, .w-poll__button-container .b-featured-video .ch-button, .b-featured-video .w-poll__button-container .ch-button, .w-poll__button-container .b-step-by-step-recipe .ch-button, .b-step-by-step-recipe .w-poll__button-container .ch-button, .w-poll__button-container .b-featured-content__button, .w-poll__button-container .article__button, .w-poll__button-container .w-recipe__button {
     display: inline-block;
     float: none;
     padding: 0 55px; }
@@ -1827,8 +1859,11 @@ body, html {
   .w-recipe .b-social {
     margin-top: 26px; }
 
+.w-recipe__heading {
+  float: right;
+  width: 100%; }
+
 .w-recipe__author__image {
-  width: 64px;
   display: block;
   border-radius: 50%;
   float: right; }
@@ -1836,6 +1871,8 @@ body, html {
 .w-recipe__item-container {
   float: left;
   overflow: hidden; }
+  .w-recipe__item-container img {
+    width: 100%; }
 
 .w-recipe__actions {
   float: right;
@@ -1855,6 +1892,9 @@ body, html {
   .w-recipe__actions__button img {
     float: right;
     margin-left: 12px; }
+  @media (max-width: 480px) {
+    .w-recipe__actions__button {
+      margin-left: 10px; } }
 
 .w-recipe__ingredients {
   width: 100%;
@@ -1864,12 +1904,19 @@ body, html {
 .w-recipe__ingredients--left {
   width: 47%;
   margin-right: 3%;
-  float: left; }
+  float: right; }
+  @media (max-width: 480px) {
+    .w-recipe__ingredients--left {
+      width: 100%;
+      margin: 0; } }
 
 .w-recipe__ingredients--right {
   width: 49%;
   margin-left: 1%;
-  float: left; }
+  float: right; }
+  @media (max-width: 480px) {
+    .w-recipe__ingredients--right {
+      width: 100%; } }
 
 .w-recipe__info {
   padding-top: 24px; }
@@ -1877,6 +1924,30 @@ body, html {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 33px; }
+
+.w-recipe__buttons {
+  width: 100%;
+  margin-top: 32px;
+  float: right;
+  text-align: center; }
+  .w-recipe__buttons p {
+    font-size: 18px;
+    margin-bottom: 45px; }
+
+.w-recipe__button {
+  display: inline-block;
+  margin: 0 10px;
+  float: none; }
+  .w-recipe__button .icon, .w-recipe__button .icon--play, .w-recipe__button .icon--maindish, .w-recipe__button .icon--dessert, .w-recipe__button .icon--appetizer, .w-recipe__button .icon--list, .w-recipe__button .icon--chat, .w-recipe__button .icon--f-instagram, .w-recipe__button .icon--f-pinterest, .w-recipe__button .icon--f-gplus, .w-recipe__button .icon--f-twitter, .w-recipe__button .icon--f-youtube, .w-recipe__button .icon--f-facebook, .w-recipe__button .icon--comment, .w-recipe__button .icon--add-white {
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-top: 11px;
+    margin-left: 20px; }
+  @media (max-width: 480px) {
+    .w-recipe__button {
+      margin-bottom: 20px;
+      width: 70%; } }
 
 .category-page .mpu__container.first, .category-page .first.mpu__container--mobile, .category-page .first.mpu__container--desk {
   margin-top: 33px; }

@@ -14,4 +14,8 @@
   &.active {
     background-image:url(../../assets/img/star.png);
   }
+  @include breakpoint(mobile) {
+    width: 16px;
+    height: 16px;
+  }
 }

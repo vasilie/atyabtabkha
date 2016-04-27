@@ -13,6 +13,8 @@
 }
 .w-recipe__heading {
   @extend .article__heading;
+  float: right;
+  width: 100%;
 }
 .w-recipe__author {
   @extend .article__author;
@@ -24,7 +26,7 @@
   @extend .article__author__name;
 }
 .w-recipe__author__image {
-  width: 64px;
+  @extend .article__author__image;
   display: block;
   border-radius: 50%;
   float: right;
@@ -32,6 +34,9 @@
 .w-recipe__item-container {
   float: left;
   overflow: hidden;
+  img {
+    width: 100%;
+  }
 }
 .w-recipe__actions {
   float: right;
@@ -50,8 +55,12 @@
     color:#ccc;
   }
   img {
-  float: right;
-  margin-left: 12px;  }
+    float: right;
+    margin-left: 12px;
+  }
+  @include breakpoint(mobile) {
+    margin-left:10px;
+  }
 }
 .w-recipe__ingredients {
   width: 100%;
@@ -64,12 +73,19 @@
 .w-recipe__ingredients--left {
   width: 47%;
   margin-right: 3%;
-  float: left;
+  float: right;
+  @include breakpoint(mobile) {
+    width: 100%;
+    margin:0;
+  }
 }
 .w-recipe__ingredients--right {
   width: 49%;
   margin-left: 1%;
-  float: left;
+  float: right;
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
 }
 .w-recipe__info {
   padding-top: 24px;
@@ -77,5 +93,32 @@
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 33px;
+  }
+}
+.w-recipe__buttons {
+  width: 100%;
+  margin-top: 32px;
+  float: right;
+  text-align: center;
+  p {
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+}
+.w-recipe__button {
+  @extend .button;
+  display:inline-block;
+  margin:0 10px;
+  float: none;
+  .icon {
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-top: 11px;
+    margin-left: 20px;
+  }
+  @include breakpoint(mobile) {
+    margin-bottom: 20px;
+    width: 70%;
   }
 }
