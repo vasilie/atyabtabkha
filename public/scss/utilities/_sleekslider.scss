@@ -1,9 +1,10 @@
 .sleekslider-container {
   width:100%;
   position:relative;
+  overflow: hidden;
   .sleekslider {
+    position: relative;
     @include breakpoint(mobile) {
-      width: 10000% !important;
       left:0;
       top:0;
       padding-bottom:0 !important;
@@ -12,21 +13,15 @@
     }
   }
   .slide {
-    @include breakpoint(mobile) {
-      width:100vw !important;
       float:right;
-      display:block;
-      float:right;
-      margin:0 !important;
-    }
+      &.first {
+        display: block;
+      }
   }
   .arrow-container {
     width:100%;
     height:100%;
     display:none;
-    @include breakpoint(mobile) {
-      display:block;
-    }
   }
   .sleekslider__arrow {
     width:50px;
@@ -52,5 +47,30 @@
     @extend .sleekslider__arrow;
     background-image: url("../../assets/img/right.png");
     right:0;
+  }
+}
+.sleekslider-container.desk {
+  .arrow-container {
+    display: block;
+  }
+  .slide {
+      float:right;
+      display:none;
+      &.first {
+        display: block;
+      }
+  }
+}
+.sleekslider-container.mobile {
+  @include breakpoint(mobile) {
+    .arrow-container {
+      display: block;
+    }
+    .slide {
+      display:none;
+      &.first {
+        display: block;
+      }
+    }
   }
 }

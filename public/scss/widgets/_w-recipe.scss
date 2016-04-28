@@ -32,7 +32,7 @@
   float: right;
 }
 .w-recipe__item-container {
-  float: left;
+  float: right;
   overflow: hidden;
   img {
     width: 100%;
@@ -66,9 +66,11 @@
   width: 100%;
   float: right;
   overflow: hidden;
+  margin-bottom: 36px;
 }
 .w-recipe-ingredients__heading {
-
+  margin-bottom: 30px;
+  font-size: 26px;
 }
 .w-recipe__ingredients--left {
   width: 47%;
@@ -100,6 +102,7 @@
   margin-top: 32px;
   float: right;
   text-align: center;
+  margin-bottom: 48px;
   p {
     font-size: 18px;
     margin-bottom: 45px;

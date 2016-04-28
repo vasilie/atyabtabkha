@@ -1,0 +1,16 @@
+.b-related-recipes {
+  @extend %box__container;
+}
+.b-related-recipes__heading {
+  margin-top:50px;
+  margin-bottom: 10px;
+}
+.b-related-recipes__item {
+  @extend %box--small;
+  @extend %box--masked;
+  @extend %box--mobile-horizontal;
+  margin: cp(10px,633px);
+  img {
+    width: 100%;
+  }
+}

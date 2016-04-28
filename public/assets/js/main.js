@@ -3,23 +3,38 @@ $(function(){
     $(".w-nav").toggleClass("active");
     $(".header__menu-ico").toggleClass("active");
   });
+  sleeksliderInit();
   if($(window).width() > 640){
     appetizerSlider();
   } else {
     cookbooksSlider();
   }
+
 });
 var slider_position = 0;
+var $slider,
+    $slide,
+    $slidesLength;
+function sleeksliderInit(){
+
+  if($(window).width() < 480){
+      $slider = $(".sleekslider-container.mobile .sleekslider");
+  } else {
+      $slider = $(".sleekslider-container.desk .sleekslider");
+  }
+    $slide = $slider.find(".slide");
+    slidesLength = $slide.length;
+    slider_width = slidesLength*100;
+    $slider.css({"width":slider_width + '%'});
+    $slide.css({"width":100/ slidesLength + '%', "display":"block"});
+}
 function slide(direction, speed){
-  var slidesLength = $(".sleekslider .slide").length,
-      $slider = $(".sleekslider");
-      $slider.css({"width":slidesLength*100 + '%'});
   if (direction == 'left' && slider_position <= slidesLength -2){
     slider_position++;
-    $slider.animate({left:slider_position*100+'vw'},speed);
+    $slider.animate({left:slider_position*100+'%'},speed);
   } else if (direction=='right' && slider_position >= 1 ){
     slider_position--;
-    $slider.animate({left:slider_position*100+'vw'},speed);
+    $slider.animate({left:slider_position*100+'%'},speed);
   }
 }
 function appetizerSlider(){

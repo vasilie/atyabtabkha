@@ -1,3 +1,7 @@
+.bg-mask {
+  overflow: hidden;
+  position: relative;
+}
 .bg-mask::after {
   content: url(../../assets/img/overlay-large.png);
   width: 100%;

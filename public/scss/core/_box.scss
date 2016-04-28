@@ -1,9 +1,22 @@
+%box__container {
+  width: 100%;
+  float: right;
+}
 %box {
   display: block;
   float: right;
   overflow: hidden;
   img {
     vertical-align: bottom;
+  }
+  &>div {
+    // @extend .bg-mask;
+
+  }
+}
+%box--masked {
+  &>div {
+    @extend .bg-mask;
   }
 }
 %box--xsmall {
@@ -97,5 +110,30 @@
   .ch-button {
     @extend .button--slim;
     margin-bottom: 20px;
+  }
+}
+%box--mobile-horizontal {
+  @include breakpoint(mobile) {
+    width: 100%;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    h3 {
+      position: relative;
+      background: white;
+      color: #333;
+      text-shadow: none;
+      float: right;
+      width: 49%;
+      margin-right: 1%;
+      font-size: 14px;
+    }
+    &>div {
+      width: 48% !important;
+      float: right;
+    }
+    img {
+      width: 100%;
+      margin:0;
+    }
   }
 }
