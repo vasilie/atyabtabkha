@@ -57,18 +57,3 @@
 .b-day-menu__item-image {
   width: 100%;
 }
-.b-day-menu__item-ico {
-  position: absolute;
-  width: 35%;
-  height: 35%;
-  top:50%;
-  left:50%;
-  z-index: 4;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
-  @include breakpoint(mobile) {
-    top: 25%;
-  }
-}

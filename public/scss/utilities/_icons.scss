@@ -2,10 +2,49 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+}
+.icon--right {
+  position: absolute;
+  top: 10px;
+  right:10px;
+}
+.icon--left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.icon--center {
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  top:50%;
+  left:50%;
+  z-index: 4;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  @include breakpoint(mobile) {
+    top: 25%;
+  }
+}
+.icon--like {
+  @extend .icon;
+  background-image: url("../../assets/img/like-icon-inactive.png");
+}
+.active--icon .icon--like {
+  background-image: url("../../assets/img/like-icon-active.png");
 }
 .icon--play {
   @extend .icon;
   background-image: url("../../assets/img/play-icon-large.png");
+}
+.icon--fav {
+  @extend .icon;
+  background-image: url("../../assets/img/favorite.png");
 }
 .icon--maindish {
   @extend .icon;
