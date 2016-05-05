@@ -1,0 +1,15 @@
+.w-search-results{
+  @extend .media__container;
+}
+.w-search-results__heading {
+  padding:20px 0 30px;
+}
+.w-search-results__element {
+  @extend .media--medium;
+}
+.w-search-results__element__item {
+  @extend .media__item;
+}
+.w-search-results__element__content {
+  @extend .media__content;
+}

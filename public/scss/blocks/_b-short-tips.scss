@@ -1,0 +1,15 @@
+.b-short-tips{
+  @extend .media__container;
+}
+.b-short-tips__heading {
+  padding:20px 0 30px;
+}
+.b-short-tips__element {
+  @extend .media--medium;
+}
+.b-short-tips__element__item {
+  @extend .media__item;
+}
+.b-short-tips__element__content {
+  @extend .media__content;
+}

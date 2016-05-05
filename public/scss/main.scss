@@ -43,14 +43,18 @@
 @import "blocks/b-ingredients-list";
 @import "blocks/b-recipe-tip";
 @import "blocks/b-related-recipes";
+@import "blocks/b-short-tips";
 
 @import "widgets/w-featured-cookbooks";
 @import "widgets/w-pagination";
 @import "widgets/w-nav";
 @import "widgets/w-poll";
 @import "widgets/w-slider";
-@import "widgets/w-appetizer";
+@import "widgets/w-carousel";
+@import "widgets/w-search-results";
+@import "widgets/w-cookbook-listing";
 @import "widgets/w-recipe";
+@import "widgets/w-menu";
 
 
 @import "pages/category-page";

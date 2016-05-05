@@ -1,0 +1,18 @@
+.w-cookbook-listing{
+  @extend .media__container;
+}
+.w-cookbook-listing__heading {
+  padding:20px 0 30px;
+}
+.w-cookbook-listing__element {
+  @extend .media--medium;
+}
+.w-cookbook-listing__element__item {
+  @extend .media__item;
+}
+.w-cookbook-listing__element__content {
+  @extend .media__content;
+  p {
+    color:#F03D65;
+  }
+}

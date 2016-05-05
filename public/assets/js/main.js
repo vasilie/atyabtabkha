@@ -5,7 +5,7 @@ $(function(){
   });
   sleeksliderInit();
   if($(window).width() > 640){
-    appetizerSlider();
+    carouselSlider();
   } else {
     cookbooksSlider();
   }
@@ -37,9 +37,9 @@ function slide(direction, speed){
     $slider.animate({left:slider_position*100+'%'},speed);
   }
 }
-function appetizerSlider(){
-  var $slides = $(".w-appetizer__media"),
-      $thumbs = $(".w-appetizer__nav > .w-appetizer__nav__item"),
+function carouselSlider(){
+  var $slides = $(".w-carousel__media"),
+      $thumbs = $(".w-carousel__nav > .w-carousel__nav__item"),
       slide_interval;
     active_slide = 0;
     startInterval();

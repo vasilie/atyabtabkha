@@ -1,5 +1,5 @@
 .b-recipe-list {
-  @extend .media--medium;
+  @extend .media__container;
   .b-rating {
     bottom: 0px;
   }
@@ -10,10 +10,10 @@
   }
 }
 .b-recipe-list__item {
-  @extend .media__item;
+  @extend .media;
 }
 .b-recipe-list__item__media {
-  @extend .media__item__media;
+  @extend .media__item;
   .like-button {
     position: absolute;
     top: 10px;
@@ -31,7 +31,7 @@
   }
 }
 .b-recipe-list__item__content {
-  @extend .media__item__content;
+  @extend .media__content;
   @include breakpoint(mobile) {
     width: 45%;
   }

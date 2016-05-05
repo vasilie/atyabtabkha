@@ -1,17 +1,20 @@
-.media {
+.media__container {
   width: 100%;
   float: right;
 }
-.media--medium {
-  @extend .media;
-}
-.media__item {
+// .media--medium {
+//   @extend .media;
+// }
+.media {
   width: 100%;
   overflow: hidden;
   position: relative;
   margin-bottom: 22px;
 }
-.media__item__media {
+.media--medium {
+  @extend .media;
+}
+.media__item {
   width: 50%;
   float: right;
   position: relative;
@@ -34,7 +37,7 @@
     left: 8%;
   }
 }
-.media__item__content {
+.media__content {
   width: 50%;
   height: 100%;
   float: right;
