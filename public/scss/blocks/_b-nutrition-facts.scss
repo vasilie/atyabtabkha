@@ -1,0 +1,22 @@
+.b-nutrition-facts {
+  margin-top:20px;
+  width: 100%;
+  h3 {
+    color:#4a4a4a;
+    text-shadow: none;
+    display: block;
+    line-height: 40px;
+    background: #ccc;
+  }
+  table {
+    width: 100%;
+  }
+  td {
+    padding:20px;
+    border:1px solid #ccc;
+    text-align: center;
+    @include breakpoint(mobile) {
+      display: block;
+    }
+  }
+}

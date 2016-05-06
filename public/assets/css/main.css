@@ -273,11 +273,11 @@ h3 {
   width: 100%;
   float: right; }
 
-.b-day-menu__item, .b-trending-fb-recipes .item, .w-slider__box, .b-trending-topic__item, .b-related-articles__item, .b-related-recipes__item, .b-featured-content, .b-chef-of-the-month, .w-slider__box.first, .b-featured-video, .b-step-by-step-recipe {
+.b-day-menu__item, .b-trending-fb-recipes .item, .w-slider__box, .b-trending-topic__item, .b-related-articles__item, .b-related-recipes__item, .b-ingredient-listing__item, .b-featured-content, .b-chef-of-the-month, .w-slider__box.first, .b-featured-video, .b-step-by-step-recipe {
   display: block;
   float: right;
   overflow: hidden; }
-  .b-day-menu__item img, .b-trending-fb-recipes .item img, .w-slider__box img, .b-trending-topic__item img, .b-related-articles__item img, .b-related-recipes__item img, .b-featured-content img, .b-chef-of-the-month img, .w-slider__box.first img, .b-featured-video img, .b-step-by-step-recipe img {
+  .b-day-menu__item img, .b-trending-fb-recipes .item img, .w-slider__box img, .b-trending-topic__item img, .b-related-articles__item img, .b-related-recipes__item img, .b-ingredient-listing__item img, .b-featured-content img, .b-chef-of-the-month img, .w-slider__box.first img, .b-featured-video img, .b-step-by-step-recipe img {
     vertical-align: bottom; }
 
 .b-day-menu__item, .b-trending-fb-recipes .item, .w-slider__box {
@@ -299,10 +299,10 @@ h3 {
         font-size: 1.13333rem !important;
         bottom: 0px; } }
 
-.b-trending-topic__item, .b-related-articles__item, .b-related-recipes__item {
+.b-trending-topic__item, .b-related-articles__item, .b-related-recipes__item, .b-ingredient-listing__item {
   width: 31.12164%;
   position: relative; }
-  .b-trending-topic__item h3, .b-related-articles__item h3, .b-related-recipes__item h3 {
+  .b-trending-topic__item h3, .b-related-articles__item h3, .b-related-recipes__item h3, .b-ingredient-listing__item h3 {
     position: absolute;
     color: white;
     line-height: 20px;
@@ -379,6 +379,11 @@ h3 {
     .b-related-recipes__item img {
       width: 100%;
       margin: 0; } }
+
+@media (max-width: 480px) {
+  .b-ingredient-listing__item {
+    width: 48%;
+    margin: 1% !important; } }
 
 .media__container, .b-recipe-list, .b-short-tips, .w-search-results, .w-cookbook-listing, .w-menu__section {
   width: 100%;
@@ -1586,6 +1591,70 @@ body, html {
 
 .b-short-tips__heading {
   padding: 20px 0 30px; }
+
+.b-ingredient-pagination {
+  width: 100%;
+  margin-bottom: 50px; }
+
+.b-ingredient-pagination__item {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  margin-bottom: 4px; }
+
+.b-ingredient-listing h2 {
+  padding: 30px 0 20px; }
+
+.b-ingredient-listing__item {
+  margin: 1.57978%; }
+
+.b-ingredient-listing__item__media img {
+  width: 100%; }
+
+.b-ingredient-listing__item__content {
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
+  .b-ingredient-listing__item__content p {
+    width: 100%;
+    padding: 20px 15px;
+    background: rgba(0, 0, 0, 0.37);
+    color: white;
+    text-align: center;
+    display: block; }
+
+.b-ingredient {
+  width: 100%; }
+  .b-ingredient h2 {
+    margin: 30px 0 20px; }
+
+.b-ingredient__media {
+  width: 100%;
+  margin-bottom: 20px; }
+  .b-ingredient__media img {
+    width: 100%; }
+
+.b-nutrition-facts {
+  margin-top: 20px;
+  width: 100%; }
+  .b-nutrition-facts h3 {
+    color: #4a4a4a;
+    text-shadow: none;
+    display: block;
+    line-height: 40px;
+    background: #ccc; }
+  .b-nutrition-facts table {
+    width: 100%; }
+  .b-nutrition-facts td {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center; }
+    @media (max-width: 480px) {
+      .b-nutrition-facts td {
+        display: block; } }
 
 .w-featured-cookbooks {
   width: 100%;

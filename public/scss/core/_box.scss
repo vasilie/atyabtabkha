@@ -137,3 +137,9 @@
     }
   }
 }
+%box--mobile-half-width {
+  @include breakpoint(mobile) {
+    width: 48%;
+    margin:1% !important;
+  }
+}
