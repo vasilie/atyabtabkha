@@ -2167,6 +2167,55 @@ body, html {
 .w-menu__element__content p {
   color: #F03D65; }
 
+.w-create-recipe input, .w-create-recipe textarea {
+  float: right;
+  width: 100%; }
+
+.w-create-recipe h2 {
+  margin-top: 60px; }
+
+.w-create-recipe h6 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  float: right;
+  width: 100%; }
+
+.w-create-recipe select {
+  float: right; }
+
+.w-create-recipe span {
+  color: #F03D65; }
+
+.w-create-recipe .button, .w-create-recipe .button--slim, .w-create-recipe .b-featured-video .ch-button, .b-featured-video .w-create-recipe .ch-button, .w-create-recipe .b-step-by-step-recipe .ch-button, .b-step-by-step-recipe .w-create-recipe .ch-button, .w-create-recipe .b-featured-content__button, .w-create-recipe .article__button, .w-create-recipe .w-recipe__button {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  clear: both; }
+
+.w-create-recipe__settings {
+  overflow: hidden; }
+
+.w-create-recipe__settings__item {
+  width: 50%;
+  float: right; }
+
+.w-create-recipe__upload {
+  padding: 20px;
+  display: inline-block;
+  background: #ccc;
+  border: 1px solid;
+  margin-top: 45px;
+  margin-bottom: 70px; }
+
+.w-step-by-step h3 {
+  color: #4a4a4a;
+  text-shadow: none; }
+
+.w-step-by-step p {
+  line-height: 22px; }
+
+.w-step-by-step .w-recipe__item-container {
+  margin-bottom: 20px; }
+
 .category-page .mpu__container.first, .category-page .first.mpu__container--mobile, .category-page .first.mpu__container--desk {
   margin-top: 33px; }
 
