@@ -22,9 +22,20 @@
   @include breakpoint(mobile) {
     width: 100%;
     padding: 0;
+    display: none;
     img {
       width: 100%;
     }
+  }
+}
+.b-recipe-tip__item--mobile {
+  display: none;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+  @include breakpoint(mobile) {
+    display: block;
   }
 }
 .b-recipe-tip__content {
