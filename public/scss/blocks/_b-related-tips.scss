@@ -1,0 +1,40 @@
+.b-related-tips {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 69px;
+}
+.b-related-tips__item {
+  @extend %box--small;
+  overflow: hidden;
+  margin: cp(10px,633px);
+  @extend %box--mobile-horizontal;
+  // @include breakpoint(mobile) {
+  //   width: 47%;
+  //   margin-bottom: 28px;
+  //   h3 {
+  //     position: relative;
+  //     color:#333;
+  //     text-shadow:none;
+  //   }
+  //   &:after {
+  //     display:none;
+  //   }
+  //
+  // }
+}
+.b-related-tips__media {
+  overflow: hidden;
+  @extend .bg-mask;
+}
+.b-related-tips .b-related-tips__item:nth-child(odd){
+  @include breakpoint(mobile) {
+    margin-right: 0;
+    float: right;
+  }
+}
+.b-related-tips .b-related-tips__item:nth-child(even){
+  @include breakpoint(mobile) {
+    margin-left: 0;
+    float: left;
+  }
+}

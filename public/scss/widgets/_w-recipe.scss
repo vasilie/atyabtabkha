@@ -15,6 +15,8 @@
   @extend .article__heading;
   float: right;
   width: 100%;
+  padding: 33px 0 10px;
+  margin-bottom: 10px;
 }
 .w-recipe__author {
   @extend .article__author;
@@ -88,6 +90,7 @@
   width: 47%;
   margin-right: 3%;
   float: right;
+  margin-top: 16px;
   @include breakpoint(mobile) {
     width: 100%;
     margin:0;

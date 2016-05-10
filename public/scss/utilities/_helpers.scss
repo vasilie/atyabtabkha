@@ -10,6 +10,19 @@
   left:0;
   z-index: 2;
 }
+.pink-line {
+  border-bottom:1px solid #ccc;
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 2px;
+    background: red;
+    bottom: -1.25px;
+    right: 0;
+  }
+}
 .first {
   margin-right: 0!important;
 }

@@ -91,17 +91,29 @@ h3 {
     h3 {
       font-size: 17px; } }
 
-.bg-mask, .b-related-recipes__item > div, .b-day-menu__item, .b-featured-video, .b-trending-topic__item, .b-step-by-step-recipe, .b-related-articles__item, .w-slider__box, .w-carousel__media {
+.bg-mask, .b-related-recipes__item > div, .b-day-menu__item, .b-featured-video, .b-trending-topic__item, .b-step-by-step-recipe, .b-related-articles__item, .b-related-tips__media, .w-slider__box, .w-carousel__media {
   overflow: hidden;
   position: relative; }
 
-.bg-mask::after, .b-related-recipes__item > div::after, .b-day-menu__item::after, .b-featured-video::after, .b-trending-topic__item::after, .b-step-by-step-recipe::after, .b-related-articles__item::after, .w-slider__box::after, .w-carousel__media::after {
+.bg-mask::after, .b-related-recipes__item > div::after, .b-day-menu__item::after, .b-featured-video::after, .b-trending-topic__item::after, .b-step-by-step-recipe::after, .b-related-articles__item::after, .b-related-tips__media::after, .w-slider__box::after, .w-carousel__media::after {
   content: url(../../assets/img/overlay-large.png);
   width: 100%;
   position: absolute;
   bottom: -3px;
   left: 0;
   z-index: 2; }
+
+.pink-line {
+  border-bottom: 1px solid #ccc;
+  position: relative; }
+  .pink-line:after {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 2px;
+    background: red;
+    bottom: -1.25px;
+    right: 0; }
 
 .first {
   margin-right: 0 !important; }
@@ -273,11 +285,11 @@ h3 {
   width: 100%;
   float: right; }
 
-.b-day-menu__item, .b-trending-fb-recipes .item, .w-slider__box, .b-trending-topic__item, .b-related-articles__item, .b-related-recipes__item, .b-ingredient-listing__item, .b-featured-content, .b-chef-of-the-month, .w-slider__box.first, .b-featured-video, .b-step-by-step-recipe {
+.b-day-menu__item, .b-trending-fb-recipes .item, .w-slider__box, .b-trending-topic__item, .b-related-articles__item, .b-related-recipes__item, .b-ingredient-listing__item, .b-related-tips__item, .b-featured-content, .b-chef-of-the-month, .w-slider__box.first, .b-featured-video, .b-step-by-step-recipe {
   display: block;
   float: right;
   overflow: hidden; }
-  .b-day-menu__item img, .b-trending-fb-recipes .item img, .w-slider__box img, .b-trending-topic__item img, .b-related-articles__item img, .b-related-recipes__item img, .b-ingredient-listing__item img, .b-featured-content img, .b-chef-of-the-month img, .w-slider__box.first img, .b-featured-video img, .b-step-by-step-recipe img {
+  .b-day-menu__item img, .b-trending-fb-recipes .item img, .w-slider__box img, .b-trending-topic__item img, .b-related-articles__item img, .b-related-recipes__item img, .b-ingredient-listing__item img, .b-related-tips__item img, .b-featured-content img, .b-chef-of-the-month img, .w-slider__box.first img, .b-featured-video img, .b-step-by-step-recipe img {
     vertical-align: bottom; }
 
 .b-day-menu__item, .b-trending-fb-recipes .item, .w-slider__box {
@@ -299,10 +311,10 @@ h3 {
         font-size: 1.13333rem !important;
         bottom: 0px; } }
 
-.b-trending-topic__item, .b-related-articles__item, .b-related-recipes__item, .b-ingredient-listing__item {
+.b-trending-topic__item, .b-related-articles__item, .b-related-recipes__item, .b-ingredient-listing__item, .b-related-tips__item {
   width: 31.12164%;
   position: relative; }
-  .b-trending-topic__item h3, .b-related-articles__item h3, .b-related-recipes__item h3, .b-ingredient-listing__item h3 {
+  .b-trending-topic__item h3, .b-related-articles__item h3, .b-related-recipes__item h3, .b-ingredient-listing__item h3, .b-related-tips__item h3 {
     position: absolute;
     color: white;
     line-height: 20px;
@@ -360,11 +372,11 @@ h3 {
     margin-bottom: 20px; }
 
 @media (max-width: 480px) {
-  .b-related-recipes__item {
+  .b-related-recipes__item, .b-related-tips__item {
     width: 100%;
     margin-left: 0 !important;
     margin-right: 0 !important; }
-    .b-related-recipes__item h3 {
+    .b-related-recipes__item h3, .b-related-tips__item h3 {
       position: relative;
       background: white;
       color: #333;
@@ -373,10 +385,10 @@ h3 {
       width: 49%;
       margin-right: 1%;
       font-size: 14px; }
-    .b-related-recipes__item > div {
+    .b-related-recipes__item > div, .b-related-tips__item > div {
       width: 48% !important;
       float: right; }
-    .b-related-recipes__item img {
+    .b-related-recipes__item img, .b-related-tips__item img {
       width: 100%;
       margin: 0; } }
 
@@ -1043,6 +1055,13 @@ body, html {
 .article__heading, .w-recipe__heading {
   padding: 33px 0 20px; }
 
+.article__item__container {
+  width: 100%;
+  position: relative;
+  float: right; }
+  .article__item__container img {
+    width: 100%; }
+
 .article__author, .w-recipe__author {
   width: 100%;
   float: right;
@@ -1140,13 +1159,14 @@ body, html {
       float: none;
       margin-bottom: 20px; } }
 
-.article__button p {
-  float: right; }
-
-.article__button img {
-  float: right;
-  margin-top: 7px;
-  margin-left: 14px; }
+.article__button {
+  margin: 0 0 0 20px; }
+  .article__button p {
+    float: right; }
+  .article__button img {
+    float: right;
+    margin-top: 7px;
+    margin-left: 14px; }
 
 .article__button__ico {
   height: 37px;
@@ -1531,7 +1551,7 @@ body, html {
   width: 100%; }
 
 .b-ingredients__list li {
-  padding: 14px 0;
+  padding: 16px 0;
   border-bottom: 2px dotted #ccc; }
 
 .b-ingredients__list li:last-child {
@@ -1678,6 +1698,28 @@ body, html {
     @media (max-width: 480px) {
       .b-nutrition-facts td {
         display: block; } }
+
+.b-related-tips {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 69px; }
+
+.b-related-tips__item {
+  overflow: hidden;
+  margin: 1.57978%; }
+
+.b-related-tips__media {
+  overflow: hidden; }
+
+@media (max-width: 480px) {
+  .b-related-tips .b-related-tips__item:nth-child(odd) {
+    margin-right: 0;
+    float: right; } }
+
+@media (max-width: 480px) {
+  .b-related-tips .b-related-tips__item:nth-child(even) {
+    margin-left: 0;
+    float: left; } }
 
 .w-featured-cookbooks {
   width: 100%;
@@ -2014,7 +2056,9 @@ body, html {
 
 .w-recipe__heading {
   float: right;
-  width: 100%; }
+  width: 100%;
+  padding: 33px 0 10px;
+  margin-bottom: 10px; }
 
 .w-recipe__author__image {
   display: block;
@@ -2073,7 +2117,8 @@ body, html {
 .w-recipe__ingredients--left {
   width: 47%;
   margin-right: 3%;
-  float: right; }
+  float: right;
+  margin-top: 16px; }
   @media (max-width: 480px) {
     .w-recipe__ingredients--left {
       width: 100%;
